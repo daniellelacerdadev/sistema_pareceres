@@ -159,7 +159,7 @@ table, th, td {
 }
 
 .texto {
-    text-align: justify;
+    text-align:justify;
     padding-top: 20px;
 }
 
@@ -208,7 +208,7 @@ select {
 }
 
 .input-numero {
-  width: 65px;
+  width: 55px;
   text-align: center;
 
 }
