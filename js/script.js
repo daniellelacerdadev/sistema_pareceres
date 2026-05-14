@@ -28,3 +28,21 @@ function calcularCargaHoraria() {
 function gerarPDF() {
   window.print();
 }
+
+function gerarPDF() {
+
+  window.print();
+
+  document
+    .getElementById("formulario")
+    .reset();
+
+  document
+    .querySelectorAll('[contenteditable="true"]')
+    .forEach(campo => {
+
+      campo.innerHTML = '';
+
+  });
+
+}
