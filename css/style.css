@@ -18,7 +18,7 @@
   margin-bottom: 30px;
 }
 
-.botao {
+.menu {
   margin-top: 30px;
 
   background-color: #2f5e2f;
@@ -30,48 +30,6 @@
   border-radius: 8px;
 
   text-decoration: none;
-}
-
-
-/*--lc-concessao --*/
-
-
-html {
-    background-color: #FFFFFF;
-}
-
-body {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 14px;
-}
-
-h4 {
-    text-align: center;
-    padding: 20px;
-}
-.cabecalho {
-    position: relative;
-    height: 180px;
-    text-align: center;
-    padding: 15px;
-    margin-top: 0;
-    
-}
-
-.logo img {
-  width: 350px;
-  text-align: center;
-}
-
-header img {
-    position: relative;
-}
-
-.menu {
-  position: absolute;
-  top: 70px;
-  right: 20px;
-  margin-left: auto;
 }
 
 .dropbtn {
@@ -121,6 +79,62 @@ header img {
   display: block;
 }
 
+/*--lc-concessao --*/
+
+
+html {
+    background-color: #FFFFFF;
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+h4 {
+    text-align: center;
+    padding: 20px;
+}
+.cabecalho {
+    position: relative;
+    height: 180px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 0;
+    
+}
+
+.logo img {
+  width: 350px;
+  text-align: center;
+}
+
+header img {
+    position: relative;
+}
+
+.btn {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  margin-left: auto;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #2f5e2f;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+}
+
+.btn:hover {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9em;
+  background-color: rgb(143, 188, 143);;
+
+}
+
 .tramitacao {
     padding-bottom: 30px;
 }
@@ -163,6 +177,7 @@ table, th, td {
 }
 
 .texto input {
+    text-align: center;
     border: none;
     background: transparent;
     font-size: 14px;
@@ -241,7 +256,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }
- 
 
 .button-pdf {
     font-weight: bolder;
@@ -308,7 +322,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 @media print {
 
-  .menu {
+  .btn {
     display: none;
   }
 
