@@ -60,6 +60,7 @@
 
 .dropbtn {
   background-color: #2f5e2f;
+  font-weight: 700;
   border: none;
   color:#ffffff;
   width: 100%;
@@ -109,9 +110,15 @@ ul {
  .dropdown-content a,
 .submenu-lateral a {
 
-   display: block;
+   display: flex;
 
-   padding: 10px 16px;
+   justify-content: space-between;
+
+   align-items: center;
+
+   gap: 10px;
+
+   padding: 10px 12px;
 
    text-decoration: none;
 }
@@ -122,10 +129,13 @@ ul {
    background-color: #2f5e2f;
    color: white;
 
+   text-decoration: none;
+
    border-radius: 10px;
 
    transition: 0.2s;
 }
+
 
 /*--pareceres--*/
 
