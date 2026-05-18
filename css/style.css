@@ -10,7 +10,7 @@
 
   text-align: center;
 
-  padding: 20px;
+  padding: 10px;
 }
 
 .logo-home {
@@ -18,68 +18,77 @@
   margin-bottom: 30px;
 }
 
+
 .menu {
+  font-size: 14px;
+
   margin-top: 30px;
 
-  background-color: #2f5e2f;
+  padding: 12px 20px;
 
-  color: white;
-
-  padding: 12px 24px;
-
-  border-radius: 8px;
+  border-radius: 12px;
 
   text-decoration: none;
 }
+
+
+.dropdown-content {
+   position: absolute;
+   background-color: #C9DFC9;
+   padding: 10px;
+   border-radius: 10px;
+   min-width: 180px;
+}
+
+.dropdown-content,
+.submenu-lateral {
+  display: none;
+}
+
 
 .dropbtn {
   background-color: #2f5e2f;
   border: none;
   color:#ffffff;
   width: 100%;
-  padding: 10px 16px;
+  padding: 10px 24px;
   border-radius: 12px;
   cursor: pointer;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+.submenu-lateral {
+   position: absolute;
+   left: 102%;
+   top: 0;
+   background-color: #C9DFC9;
+   padding: 10px;
+   border-radius: 10px;
+   min-width: 180px;
 }
 
-.dropdown-content {
-  display: none;
-
-  position: absolute;
-
-  background-color: white;
-
-  min-width: 220px;
-
-  box-shadow: 0 4px 8px rgb(143, 188, 143);
-
-  border-radius: 8px;
-
-  overflow: hidden;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.dropdown-content a {
-  color: black;
-  font-size: 12px;
-  padding: 12px 16px;
-  text-decoration: none;
-  display:flex;
-}
-
-.dropdown-content a:hover {
-  background-color: #dfeedd;
-}
-
-.dropdown:hover .dropdown-content {
+.menu li:hover > .dropdown-content {
   display: block;
 }
 
-/*--lc-concessao --*/
+.dropdown-content li:hover > .submenu-lateral {
+  display: block;
+}
+
+.dropdown-content li {
+   position: relative;
+}
+.dropdown-content li a {
+  color: #336600;
+  font-weight: 600;
+}
+
+/*--pareceres--*/
 
 
 html {
@@ -88,7 +97,14 @@ html {
 
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#long {
     font-size: 14px;
+}
+
+#short {
+    font-size: 16px;
 }
 
 h4 {
@@ -131,7 +147,7 @@ header img {
   color: #ffffff;
   font-weight: 600;
   font-size: 0.9em;
-  background-color: rgb(143, 188, 143);;
+  background-color: rgb(143, 188, 143);
 
 }
 
@@ -238,6 +254,13 @@ blockquote {
     padding: 30px;
     font-style: italic;
     font-size: 12px;
+}
+
+#short blockquote {
+    margin: 16px 0 16px 32px;
+    padding: 30px;
+    font-style: italic;
+    font-size: 14px;
 }
 
 blockquote p {
