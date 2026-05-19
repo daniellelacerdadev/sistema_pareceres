@@ -200,7 +200,7 @@ header img {
 }
 
 .tabela {
-    width: 60%;
+    width: 65%;
     height: 120px;
     justify-self: center;
     text-align: left;
@@ -216,7 +216,7 @@ table, th, td {
     
     border: 2px double black;
     border-collapse: collapse;
-    padding: 12px;
+    padding: 10px;
 }
 
 .tramitacao input {
@@ -265,6 +265,11 @@ table, th, td {
 select {
     border-radius: 10px;
     font-size: 14px;
+}
+
+.destaque {
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 #short {
