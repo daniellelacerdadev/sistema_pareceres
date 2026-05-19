@@ -46,3 +46,35 @@ function gerarPDF() {
   });
 
 }
+
+const iniciolic = document.getElementById("inicio-lic");
+const fimlic = document.getElementById("fim-lic");
+
+iniciolic.addEventListener("change", () => {
+
+   const dataInicial = new Date(iniciolic.value);
+
+   dataInicial.setDate(dataInicial.getDate() + 120);
+
+   const dia = String(dataInicial.getDate()).padStart(2, "0");
+   const mes = String(dataInicial.getMonth() + 1).padStart(2, "0");
+   const ano = dataInicial.getFullYear();
+
+   fimlic.value = `${dia}/${mes}/${ano}`;
+});
+
+const inicioProrrog = document.getElementById("inicio-prorrog");
+const fimProrrog = document.getElementById("fim-prorrog");
+
+inicioProrrog.addEventListener("change", () => {
+
+   const dataInicial = new Date(inicioProrrog.value);
+
+   dataInicial.setDate(dataInicial.getDate() + 60);
+
+   const dia = String(dataInicial.getDate()).padStart(2, "0");
+   const mes = String(dataInicial.getMonth() + 1).padStart(2, "0");
+   const ano = dataInicial.getFullYear();
+
+   fimProrrog.value = `${dia}/${mes}/${ano}`;
+});

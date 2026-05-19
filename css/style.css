@@ -146,20 +146,8 @@ html {
 
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-#long {
-    font-size: 14px;
+     font-size: 14px;
     line-height: 1.5em;
-}
-
-#short {
-    font-size: 16px;
-    line-height: 1.2em;
-}
-
-#short blockquote {
-  font-size: 13px;
 }
 
 h4, h5 {
@@ -438,11 +426,3 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 }
 
-@media print {
-
-  #short footer {
-    bottom: 0;
-    width: 100%;
-    margin-top: 50%;
-  }
-}
