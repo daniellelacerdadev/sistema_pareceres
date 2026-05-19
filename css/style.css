@@ -150,20 +150,22 @@ body {
 
 #long {
     font-size: 14px;
+    line-height: 1.5em;
 }
 
 #short {
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.2em;
 }
 
 #short blockquote {
   font-size: 13px;
 }
 
-h4 {
+h4, h5 {
     text-align: center;
     padding: 20px;
+    font-weight: 700;
 }
 .cabecalho {
     position: relative;
@@ -249,6 +251,18 @@ table, th, td {
 .texto {
     text-align:justify;
     padding-top: 20px;
+}
+
+.lista-romana {
+   list-style-type: upper-roman;
+}
+
+.lista-alfa {
+  list-style-type: lower-alpha;
+}
+
+.lista-alfa li::marker {
+   content: counter(list-item, lower-alpha) ") ";
 }
 
 .texto input {
@@ -417,7 +431,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
     width: 100%;
 
-    margin-top: 30px;
+    margin-top:25px;
 
     padding-bottom: 0;
   }
