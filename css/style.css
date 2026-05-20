@@ -286,11 +286,12 @@ select {
 .campo-inline {
   display: inline-block;
   text-align: center;
-  min-width: fit-content;
+  min-width: 40px;
   max-width: 100%;
   border: 1px solid transparent;
   padding: 2px;
   color: #000;
+  font-size: 14px;
   outline: none;
   white-space: pre-wrap;
 }
