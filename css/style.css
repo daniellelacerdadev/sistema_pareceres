@@ -272,10 +272,14 @@ select {
   font-weight: 600;
 }
 
-#short {
+#short  p {
   border-radius: 10px;
-  font-size: 16px;
-  text-align: center;
+  font-size: 17px;
+  line-height: 1.5em;
+}
+
+#short blockquote {
+  font-size: 14px;
 }
 
 .campo-inline {
