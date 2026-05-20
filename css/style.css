@@ -289,7 +289,7 @@ select {
   min-width: fit-content;
   max-width: 100%;
   border: 1px solid transparent;
-  padding: 2px 4px;
+  padding: 2px;
   color: #000;
   outline: none;
   white-space: pre-wrap;
@@ -302,7 +302,7 @@ select {
 
 .campo-grande {
   display: inline-block;
-  min-width: 40px;
+  min-width: 60px;
   border: 1px solid transparent;
   color: #000;
   padding: 2px 4px;
