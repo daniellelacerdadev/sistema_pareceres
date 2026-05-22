@@ -47,34 +47,141 @@ function gerarPDF() {
 
 }
 
-const iniciolic = document.getElementById("inicio-lic");
-const fimlic = document.getElementById("fim-lic");
+const iniciolic = document.getElementById("iniciolic");
 
-iniciolic.addEventListener("change", () => {
+const fimlic = document.getElementById("fimlic");
 
-   const dataInicial = new Date(iniciolic.value);
 
-   dataInicial.setDate(dataInicial.getDate() + 120);
+if (iniciolic && fimlic) {
 
-   const dia = String(dataInicial.getDate()).padStart(2, "0");
-   const mes = String(dataInicial.getMonth() + 1).padStart(2, "0");
-   const ano = dataInicial.getFullYear();
+    iniciolic.addEventListener("change", () => {
 
-   fimlic.value = `${dia}/${mes}/${ano}`;
-});
+        const dataInicial = new Date(iniciolic.value);
 
-const inicioProrrog = document.getElementById("inicio-prorrog");
-const fimProrrog = document.getElementById("fim-prorrog");
+        dataInicial.setDate(dataInicial.getDate() + 120);
 
-inicioProrrog.addEventListener("change", () => {
+        const dia = String(dataInicial.getDate()).padStart(2, "0");
 
-   const dataInicial = new Date(inicioProrrog.value);
+        const mes = String(dataInicial.getMonth() + 1).padStart(2, "0");
 
-   dataInicial.setDate(dataInicial.getDate() + 60);
+        const ano = dataInicial.getFullYear();
 
-   const dia = String(dataInicial.getDate()).padStart(2, "0");
-   const mes = String(dataInicial.getMonth() + 1).padStart(2, "0");
-   const ano = dataInicial.getFullYear();
+        fimlic.value = `${dia}/${mes}/${ano}`;
 
-   fimProrrog.value = `${dia}/${mes}/${ano}`;
-});
+    });
+
+}
+
+const inicioprorrog = document.getElementById("inicio-prorrog");
+
+const fimprorrog = document.getElementById("fim-prorrog");
+
+
+if (inicioprorrog && fimprorrog) {
+
+    inicioprorrog.addEventListener("change", () => {
+
+        const dataInicial = new Date(inicioprorrog.value);
+
+        dataInicial.setDate(dataInicial.getDate() + 120);
+
+        const dia = String(dataInicial.getDate()).padStart(2, "0");
+
+        const mes = String(dataInicial.getMonth() + 1).padStart(2, "0");
+
+        const ano = dataInicial.getFullYear();
+
+        fimprorrog.value = `${dia}/${mes}/${ano}`;
+
+    });
+
+}
+
+
+
+const botaoAdd = document.getElementById("add-quinquenio");
+
+const botaoRemove = document.getElementById("remove-quinquenio");
+
+const lista = document.getElementById("lista-quinquenios");
+
+
+if (botaoAdd && botaoRemove && lista) {
+
+    botaoAdd.addEventListener("click", () => {
+
+        const novoItem = document.createElement("li");
+
+        novoItem.innerHTML = `
+
+            <input type="number" class="input-numero">º quinquênio:
+            <input type="text"> a
+            <input type="text">
+
+        `;
+
+        lista.appendChild(novoItem);
+
+    });
+
+
+    botaoRemove.addEventListener("click", () => {
+
+        if (lista.children.length > 1) {
+
+            lista.removeChild(lista.lastElementChild);
+
+        }
+
+    });
+
+}
+
+const botaoLinha = document.getElementById("add-linha");
+
+const linhaRemove = document.getElementById("remove-linha");
+
+const tabelaBody = document.getElementById("tabela-quinquenio-body");
+
+
+if (botaoLinha && linhaRemove && tabelaBody) {
+
+    botaoLinha.addEventListener("click", () => {
+
+        const novaLinha = document.createElement("tr");
+
+        novaLinha.innerHTML = `
+
+            <td><input type="text" class="input-numero"></td>
+
+            <td><input type="text" name="ocorrencia"></td>
+
+            <td>
+               <span contenteditable="true"
+               class="campo-inline"></span>
+            </td>
+
+            <td><input type="text" class="input-numero"></td>
+
+            <td>
+               <span contenteditable="true"
+               class="campo-inline"></span>
+            </td>
+
+        `;
+
+        tabelaBody.appendChild(novaLinha);
+
+    });
+
+     linhaRemove.addEventListener("click", () => {
+
+        if (tabelaBody.children.length > 1) {
+
+            tabelaBody.removeChild(tabelaBody.lastElementChild);
+
+        }
+
+    });
+
+}
