@@ -233,11 +233,13 @@ table, th, td {
 }
 
 .campo-data {
-   width: 110px;
+   width: 100px;
+   max-width: fit-content;
+   font-size: 14px;
 }
 
 .texto {
-    text-align:justify;
+    text-align: justify;
     padding-top: 20px;
 }
 
@@ -261,6 +263,24 @@ table, th, td {
     border-radius: 12px;
 }
 
+ #short .campo-data {
+   display: inline;
+   min-width: 100px;
+   padding: 2px 6px;
+   font-size: 16px;
+   border: 1px solid transparent;
+   color: #000;
+}
+
+#short .campo-data:focus {
+  border: 2px solid #000;
+  border-radius: 12px;
+}
+
+#short .texto input {
+  font-size: 16px;
+}
+
 
 select {
     border-radius: 10px;
@@ -276,22 +296,26 @@ select {
   border-radius: 10px;
   font-size: 17px;
   line-height: 1.5em;
-  text-align: justify;
+  
 }
 
 #short blockquote p {
   font-size: 15px;
 }
 
+#short input {
+  font-size: 17px;
+}
+
 .campo-inline {
   display: inline-block;
   text-align: center;
-  min-width: 40px;
+  min-width: 80px;
   max-width: 100%;
   border: 1px solid transparent;
   padding: 2px;
   color: #000;
-  font-size: 14px;
+  font-size: 1em;
   outline: none;
   white-space: pre-wrap;
 }
@@ -311,6 +335,16 @@ select {
   white-space: pre-wrap;
 }
 
+#short .campo-grande {
+  display: inline;
+  min-width: 120px;
+  border: 1px solid transparent;
+  color: #000;
+  padding: 2px;
+  outline: none;
+  white-space: pre-wrap;
+}
+
 .campo-grande:focus {
     border: 2px solid #000;
     border-radius: 12px;
@@ -320,6 +354,12 @@ select {
   width: 55px;
   text-align: center;
 
+}
+
+.campo-dias {
+   min-width: 30px;
+   text-align: center;
+   padding: 2px 6px;
 }
     
    #cargatotal, #cargasem, #dias {
