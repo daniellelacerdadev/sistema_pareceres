@@ -293,7 +293,7 @@ select {
 }
 
 #short   {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.5em;
   
 }
@@ -303,7 +303,21 @@ select {
 }
 
 #short input {
-  font-size: 17px;
+  font-size: 16px;
+}
+
+#short .campo-inline {
+  display: inline-block;
+  text-align: center;
+  min-width: 80px;
+  max-width: 100%;
+  font-size: 16px;
+  border: 1px solid transparent;
+  padding: 2px;
+  color: #000;
+  font-size: 1em;
+  outline: none;
+  white-space: pre-wrap;
 }
 
 .campo-inline {
@@ -546,7 +560,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
     width: 100%;
 
-    margin-top: 45%;
+    margin-top: 40%;
   }
 }
 
