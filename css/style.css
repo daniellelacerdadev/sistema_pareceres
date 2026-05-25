@@ -447,6 +447,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   -webkit-appearance: none;
 }
 
+input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+   opacity: 0;
+   cursor: pointer;
+   border: none;
+   background: transparent;
+   font-size: 16px;
+
+}
+
+.quadro-horario {
+  width: 100%;
+  font-size: 14px;
+}
+
 .button-pdf {
     font-weight: bolder;
     background-color: #2f5e2f;

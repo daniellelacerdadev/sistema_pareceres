@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+
+    <title>Parecer de Horário Especial para Servidor Estudante</title>
+ </head>
+ <body>
+         <header class="cabecalho">
+
+            <div class="logo">
+                <img src="../img/logo_gov.png" width="400"  alt="Logo do governo e dados do órgão de emissão">
+             </div>
+
+           <nav>
+
+                <a
+                 href="../index.html"
+                    class="btn btn-outline-rosa">
+
+                  Voltar ao Menu Principal
+
+                </a>
+
+           </nav>
+        </header>
+
+        <section class="tramitacao">
+            <div class="container">
+                <h4>PARECER DE CONCESSÃO DE HORÁRIO ESPECIAL PARA SERVIDOR ESTUDANTE</h4>
+                <form action="" id="formulario">
+
+                    <table class="tabela">                  
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="titulo">Tramitação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Número do Processo:</th>
+                                <td><input type="text" placeholder="Digite o número do processo" width="100%">  </td>
+                            </tr>
+                            <tr>
+                                <th>Assunto:</th>
+                                <td> Horário Especial para Servidor Estudante</td>
+                            </tr>
+                            <tr>
+                                <th>Requerente:</th>
+       
+                                <td><input type="text" placeholder="Digite o nome do servidor requerente" width="100%"></td>
+                             </tr>
+                            <tr>
+                                <th>Origem:</th>
+                                <td>CCAA/CGPCAP/DGP/PROPESSOAS/REITORIA/IFC</td>
+                            </tr>
+                            <tr>
+                                <th>Data da tramitação:</th>
+                                <td><input  type="text" id="data-emissao" width="100%" align-self-center></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </section>
+
+        <section class="texto">
+            <div class="container">
+                <form>
+                    <p>
+                         Trata-se de solicitação de CONCESSÃO DE HORÁRIO ESPECIAL do(a) servidor(a) <span contenteditable="true" 
+                        class="campo-inline"></span>, ocupante do Cargo de <span contenteditable="true" 
+                        class="campo-inline"></span>, lotado(a) no Campus <select name="lotacao">
+                            <option>Campus Abelardo Luz</option>
+                            <option>Campus Araquari</option>
+                            <option>Campus Blumenau</option>
+                            <option>Campus Brusque</option>
+                            <option>Campus Camboriú</option>
+                            <option>Campus Concórdia</option>
+                            <option>Campus Fraiburgo</option>
+                            <option>Campus Ibirama</option>
+                            <option>Campus Luzerna</option>
+                            <option>Campus Rio do Sul</option>
+                            <option>Campus Santa Rosa do Sul</option>
+                            <option>Campus São Bento do Sul</option>
+                            <option>Campus São Francisco do Sul</option>
+                            <option>Campus Sombrio</option>
+                            <option>Campus Videira</option>
+                            <option>Reitoria Administrativa</option>
+                          </select>, 
+                         matrícula SIAPE nº <input type="text" size="7" maxlength="7">, para participar do <span contenteditable="true" 
+                        class="campo-inline"></span> , promovido pelo (a) <span contenteditable="true" 
+                        class="campo-inline"></span>.
+                    </p>
+                    <p>
+                        A concessão de horário especial para servidor estudante está prevista no Art. 98, da Lei nº 8.112/90, 
+                        senão vejamos:
+                    </p>
+                        <blockquote>
+                            <p>
+                              <strong> Art. 98 </strong> Será concedido horário especial ao servidor estudante, quando comprovada a 
+                              incompatibilidade entre o horário escolar e o da repartição, sem prejuízo do exercício do cargo.
+                            </p>
+                            <p>
+                               <strong> § 1º</strong> Para efeito do disposto neste artigo, será exigida a compensação de horário no 
+                               órgão ou entidade que tiver exercício, respeitada a duração semanal do trabalho. (Parágrafo renumerado e 
+                               alterado pela Lei nº 9.527, de 10.12.97).
+ 
+                            </p>
+                        </blockquote>
+                    <p>
+                        A Resolução n. RESOLUÇÃO Nº 35/2025 - CONSUPER disciplina a concessão do Horário Especial para Servidor Estudante 
+                        aos servidores efetivos do Instituto Federal Catarinense:
+                    </p>
+                        <blockquote>
+                            <p>
+                                <strong> Art. 4º</strong> A concessão de horário especial para servidor estudante, para cursos de nível 
+                                médio e profissionalizante, cursos de graduação, cursos de pós-graduação lato sensu e stricto sensu,
+                                regulares ou supletivos, e para disciplinas isoladas de programas de pós-graduação stricto sensu, 
+                                dar-se-á mediante compatibilização de sua jornada laboral com as atividades acadêmicas dos referidos 
+                                cursos, quando comprovada a incompatibilidade do horário, sem prejuízo do exercício das atividades do 
+                                cargo e com compensação de horário, na forma da legislação vigente.
+                            </p>
+                            <p>
+                                <strong> Art. 5º</strong> O horário especial para servidor estudante será concedido mediante atendimento ao
+                                s seguintes requisitos iniciais:
+                            </p>
+                                <ol class="lista-romana">
+                                    <li> Estar matriculado e com frequência regular em cursos de nível médio, cursos profissionalizantes de
+                                         nível médio, cursos de graduação, cursos de pós-graduação lato sensu e stricto sensu, regulares ou
+                                          supletivos ou em disciplinas isoladas de programas de pós- graduação stricto sensu.</li>
+                                    <li> Comprovar a incompatibilidade entre o horário escolar e o do setor de trabalho, mediante documento
+                                         comprobatório emitido pela instituição promotora do curso, com a indicação do turno e carga 
+                                         horária semanal a ser cursada.</li>
+                                    <li> Fazer a reposição das horas destinadas aos estudos no decorrer da semana, de acordo com a Portaria
+                                         Normativa de controle de frequência vigente.</li>
+                                    <li> Formalizar requerimento à chefia imediata para tal concessão, fazendo constar no documento o plano
+                                         de compensação de horários para a reposição da jornada semanal de trabalho.</li>
+                                </ol>
+                        </blockquote>
+                        <blockquote>
+                            <p>
+                                <strong> Art. 6º</strong> Para o processo de solicitação de horário especial, o servidor deverá protocolar 
+                                requerimento com a documentação instituída no Manual do Servidor.
+                            </p>
+                        
+                            <p>
+                                <strong> Art. 7º</strong> A concessão do horário especial para servidor estudante dar-se-á de acordo com o
+                                 regime do curso, por meio de ato administrativo do dirigente máximo do IFC, após apreciação da chefia 
+                                 imediata e Direção-Geral/Pró-reitoria, bem como da CPPD, no caso de servidor docente e, da CIS, quando 
+                                 técnico administrativo e, ainda, após análise da Diretoria de Gestão de Pessoas (DGP)/Reitoria.
+                            </p>
+                            <p>
+                                <strong>§ 1º</strong> O servidor autorizado a se ausentar do serviço para a realização de exames e provas 
+                                do curso regular deverá apresentar comprovação oficial do estabelecimento de ensino para esse fim.
+                            </p>
+                            <p>
+                              <strong>§ 2º</strong>  O servidor só poderá iniciar o horário especial de estudante após ato administrativo de autorização do dirigente máximo da instituição.
+                            </p>
+                            <p>
+                                <strong>Art. 8º</strong> A renovação deverá ser, no máximo, semestral, independentemente do curso que 
+                                estiver frequentando e da periodicidade da matrícula, para tanto deverá ser requerida 30 dias antes do 
+                                início de cada período, mediante apresentação de documento comprobatório da matrícula para aquele período
+                                 ou da frequência regular no período anterior.
+                            </p>
+                            <p>
+                                <strong> § 1º</strong> O servidor só poderá iniciar a renovação do horário especial de estudante após ato 
+                                administrativo de autorização do dirigente máximo da instituição.
+                            </p>
+                            <p>
+                                <strong> § 2º</strong> A DGP terá o prazo de até 30 dias para analisar a solicitação, contados a partir 
+                                da data de tramitação do processo à Coordenação responsável pela análise.
+                            </p>
+                            <p>
+                                <strong> Art. 9º</strong> Cabe à chefia imediata controlar a frequência do servidor, bem como acompanhar 
+                                 fiscalizar o cumprimento dos períodos de compensação e as tarefas a serem executadas.
+                            </p>
+                            <p>
+                                <strong> Art. 10</strong> Ao servidor será permitido ausentar-se do serviço para a realização de exames 
+                                nacionais de avaliação do ensino, como o Exame Nacional de Desempenho dos Estudantes (Enade), desde que 
+                                esteja regularmente matriculado no curso ao qual o exame se refere, mediante comprovação e posterior 
+                                compensação, conforme disposto na Portaria Normativa vigente sobre o controle de frequência.
+                            </p>
+                            <p>
+                                <strong> Art. 11</strong> Para o afastamento previsto no caput deste artigo, a concessão de horário 
+                                especial deve interromper-se durante as férias escolares e/ou quando as atividades normais de ensino do 
+                                curso forem interrompidas por quaisquer motivos.
+                            </p>
+                            <p>
+                                <strong> Art. 12</strong> São razões para a revogação da concessão do horário especial:
+                            </p>
+                                <ol class="lista-romana">
+                                    <li>o trancamento geral da matrícula;</li>
+                                    <li>a conclusão do curso;</li>
+                                    <li> o desligamento;</li>
+                                    <li> o jubilamento.</li>
+                                </ol>
+                            <p>
+                                <strong> § 1º</strong> Na hipótese de trancamento de disciplina, poderá haver a redução do horário 
+                                concedido, equivalente à carga horária da disciplina trancada.
+                            </p>
+                            <p>
+                                <strong> § 2º</strong> O servidor deverá solicitar imediatamente o cancelamento do horário especial 
+                                quando cessarem os motivos que ensejaram sua concessão.
+                            </p>
+                            <p>
+                                <strong> § 3º</strong> Constatado que a situação do servidor estudante não corresponde aos comprovantes 
+                                apresentados, ou que não estão sendo cumpridas as exigências desta norma, será cancelado o horário especial
+                                 sem prejuízo das medidas disciplinares cabíveis.
+                            </p>
+                            <p>
+                                <strong> § 4º</strong> O servidor estudante que não compensar o horário especial nas formas do art. 9º 
+                                perderá a parcela de remuneração diária proporcional correspondente.
+                            </p>
+                            <p>
+                                <strong> Art. 13</strong> O servidor ocupante de Função Gratificada (FG), Cargo de Direção (CD) ou Função 
+                                de Coordenação de Curso (FCC) não fará jus ao horário especial para servidor estudante.
+                            </p>
+                        </blockquote>
+
+                    <p>
+                         A Portaria Normativa 17/2019, que dispõe sobre a jornada de trabalho dos servidores do Instituto Federal Catarinense, 
+                         estabelece:
+                    </p>
+
+                        <blockquote>
+                            <p>
+                               <strong> Art. 13</strong>  Será concedido horário especial ao servidor estudante, mediante requerimento do interessado e decisão da 
+                                chefia imediata, quando comprovada a incompatibilidade entre o horário escolar e o do trabalho, sem 
+                                prejuízo do exercício do cargo, nos termos da Resolução do Consuper/IFC em vigor sobre o tema.
+                            </p>
+                        </blockquote>
+                        <blockquote>
+                            <p>
+                                <strong> § 1º</strong>  Para efeito do disposto neste artigo, será exigida a compensação de horário na 
+                                unidade em que tiver exercício o servidor estudante, de acordo com a Resolução em vigor sobre o tema, 
+                                respeitada a duração semanal do trabalho, no prazo máximo de seis meses. O controle de assiduidade do 
+                                servidor estudante compete à chefia imediata e far-se-á mediante registro de ponto.
+                            </p>
+                        </blockquote>
+
+                    <p>
+                         Para servidores que seguem o Programa de Gestão e Desempenho na modalidade de Teletrabalho Parcial ou Integral, 
+                         conforme a Instrução Normativa Conjunta SEGES-SGP-SRT/MGI nº 21 e legislações correlatas, temos as seguintes 
+                         orientações para a compensação de horário, conforme a NOTA TÉCNICA Nº 1 / 2025 - DGP/REITOR:
+                    </p>
+
+                        <blockquote>
+                            <p>
+                                Para fins de adequação, seja na modalidade presencial ou teletrabalho, entende-se que o servidor em PGD 
+                                poderá optar pelo seguinte procedimento de compensação:
+                            </p>
+                                <ol>
+                                    <li>Reorganização da carga horária semanal no próprio regime remoto: o servidor poderá redistribuir 
+                                        suas horas de trabalho dentro da mesma semana (definindo a disponibilidade), de modo a possibilitar
+                                         cumprimento das horas destinadas ao curso, sem prejuízo das entregas previstas em seu plano de 
+                                         trabalho.</li>
+                                    <li>A reorganização, para fins do HESE, deve ser acordada previamente com a chefia imediata, a fim de 
+                                        garantir a regularidade de horários e a continuidade das atividades.</li>
+                                    <li><strong>Caberá à chefia imediata, mediante HESE, organizar os horários para garantir o atendimento
+                                         pleno das atividades presenciais. Caso necessário, reorganizará a escala para manter o 
+                                          do setor.</strong></li>
+                                    <li>O fluxo para concessão de HESE segue o já instituído. O formulário também não exigiu alteração, 
+                                        <strong> mas no campo observação colocar: “o servidor encontra-se em PGD tratando-se aqui apenas 
+                                            de reorganização de horário de disponibilidade dentro da jornada semanal”, mas mantido o 
+                                            cumprimento de metas e entregas, sem prejuízo para a administração. Importante pontuar a 
+                                            modalidade do PGD: presencial ou </strong></li>
+                                </ol>
+                                (Grifo nosso)
+                        </blockquote>
+                    <p>
+                         Diante do exposto e considerando a proposta de compensação de horário apresentada pelo(a) servidor(a), a autorização da Chefia Imediata e da Direção do Campus,
+                          bem como a concordância da CIS, esta Diretoria de Gestão de Pessoas manifesta-se favoravelmente pela concessão 
+                          ao Horário Especial de Estudante ao (à) servidor (a) <span contenteditable="true" class="campo-inline"></span>, 
+                          ocupante do cargo de <span contenteditable="true" class="campo-inline"></span>, SIAPE nº <input type="text"
+                           size="7" maxlength="7">, lotada no(a) <select name="lotacao">
+                            <option>Campus Abelardo Luz</option>
+                            <option>Campus Araquari</option>
+                            <option>Campus Blumenau</option>
+                            <option>Campus Brusque</option>
+                            <option>Campus Camboriú</option>
+                            <option>Campus Concórdia</option>
+                            <option>Campus Fraiburgo</option>
+                            <option>Campus Ibirama</option>
+                            <option>Campus Luzerna</option>
+                            <option>Campus Rio do Sul</option>
+                            <option>Campus Santa Rosa do Sul</option>
+                            <option>Campus São Bento do Sul</option>
+                            <option>Campus São Francisco do Sul</option>
+                            <option>Campus Sombrio</option>
+                            <option>Campus Videira</option>
+                            <option>Reitoria Administrativa</option>
+                          </select>, de acordo com o art.98 da Lei nº 8.112, de 11 de dezembro de 1990, durante o período de 
+                          <span contenteditable="true" class="campo-data"></span> a <span contenteditable="true" 
+                           class="campo-data"></span>, conforme especificado na tabela abaixo:
+                           <table class="quadro-horario">
+                            <thead>
+                                <tr>
+                                    <th>Dia da semana</th>
+                                    <th>Hora de Entrada</th>
+                                    <th>Hora de Saída</th>
+                                    <th>Hora de Entrada</th>
+                                    <th>Hora de Saída</th>
+                                    <th>Hota de Entrada</th>
+                                    <th>Hora de Saída</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Segunda-feira</td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                </tr>
+                                <tr>
+                                    <td>Terça-feira</td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                </tr>
+                                <tr>
+                                    <td>Quarta-feira</td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                </tr>
+                                <tr>
+                                    <td>Quinta-feira</td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                </tr>
+                                <tr>
+                                    <td>Sexta-feira</td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                </tr>
+                                <tr>
+                                    <td>Sábado</td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                    <td><input type="time" name="hora"></td>
+                                </tr>
+                            </tbody>
+                           </table>
+                    </p>
+                    <p>
+                        Outrossim, salienta-se que para a continuação do horário especial, o(a) servidor(a) terá que apresentar a grade 
+                        de horário do curso, o novo quadro demonstrativo com os dias e horários nos quais ocorrerá o afastamento, bem 
+                        como horário de compensação, além da declaração esclarecendo o horário de trabalho habitual cumprido pelo(a) 
+                        mesmo(a). Por derradeiro, informamos que o(a) servidor(a) deverá comprovar renovação de matrícula para cada 
+                        semestre.
+                    </p>
+                    <p>
+                         É o entendimento.
+                    </p>
+                    <p>
+                        À apreciação da Diretoria de Gestão de Pessoas e Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e 
+                        Assistência à Pessoa, para ciência e assinaturas.
+                    </p>
+                    <p>
+                        Após, encaminhe-se ao(à) servidor(a) interessado(a) para ciência e, posteriormente tramite-se ao Setor de 
+                        Portarias da Reitoria para a emissão da respectiva portaria. Por fim, tramite-se à Coordenação de Concessões, 
+                        Aposentadorias e Ações Judiciais (11.01.18.55).
+                    </p>
+
+
+
+
+
+                        <button class="button-pdf"  onclick= "gerarPDF()">
+                         Gerar PDF
+                        </button>
+                </form>
+            </div>
+        </section>
+      
+
+        <footer class="rodape">
+
+          <img src="../img/logo_ifc.png" class="logoifc"  alt="Logo IFC">
+
+          <div class="endereco">  
+
+           <img src="../img/end_rodape.png"  alt="Endereço da Reitoria IFC">
+
+       </footer>
+
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../js/script.js" defer></script>
+ </body>
+</html>
