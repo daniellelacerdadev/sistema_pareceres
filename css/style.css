@@ -292,8 +292,7 @@ select {
   font-weight: 600;
 }
 
-#short  p {
-  border-radius: 10px;
+#short   {
   font-size: 17px;
   line-height: 1.5em;
   
@@ -547,7 +546,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
     width: 100%;
 
-    margin-top: 100px;
+    margin-top: 45%;
   }
 }
 
