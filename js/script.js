@@ -152,7 +152,8 @@ if (botaoLinha && linhaRemove && tabelaBody) {
 
         novaLinha.innerHTML = `
 
-            <td><input type="text" class="input-numero"></td>
+            <td><input type="text" class="input-numero">º <input type="text" class="campo-data"> a <input type="text" 
+                                class="campo-data"></td>
 
             <td><input type="text" name="ocorrencia"></td>
 
