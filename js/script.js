@@ -165,7 +165,7 @@ if (botaoLinha && linhaRemove && tabelaBody) {
                class="campo-inline"></span>
             </td>
 
-            <td><input type="text" class="input-numero"></td>
+            <td><span contenteditable="true" class="campo-inline"></span></td>
 
             <td>
                <span contenteditable="true"
