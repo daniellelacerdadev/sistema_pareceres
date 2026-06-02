@@ -439,6 +439,7 @@ fieldset {
 .atualiza-quinquenio th {
   text-align: center;
   background-color: rgb(192, 224, 199);
+  border: 2px double #000000;
 }
 
 .atualiza-quinquenio {
