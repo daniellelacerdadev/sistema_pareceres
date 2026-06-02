@@ -4,8 +4,15 @@
      const mes = String(hoje.getMonth() + 1).padStart(2, '0');
      const ano = hoje.getFullYear();
 
-document.getElementById("data-emissao").value =
-`${dia}/${mes}/${ano}`;
+const dataEmissao =
+document.getElementById("data-emissao");
+
+if (dataEmissao) {
+
+    dataEmissao.value =
+    `${dia}/${mes}/${ano}`;
+
+}
 
 function calcularCargaHoraria() {
 
@@ -26,15 +33,11 @@ function calcularCargaHoraria() {
 }
 
 function gerarPDF() {
-  window.print();
-}
-
-function gerarPDF() {
 
   window.print();
 
   document
-    .getElementById("formulario")
+    .getElementById("requerimento")
     .reset();
 
   document
@@ -155,7 +158,7 @@ if (botaoLinha && linhaRemove && tabelaBody) {
             <td><input type="text" class="input-numero">º <input type="text" class="campo-data"> a <input type="text" 
                                 class="campo-data"></td>
 
-            <td><input type="text" name="ocorrencia"></td>
+            <td><span contenteditable="true" class="campo-inline"></span></td>
 
             <td>
                <span contenteditable="true"
@@ -186,3 +189,71 @@ if (botaoLinha && linhaRemove && tabelaBody) {
     });
 
 }
+
+function calcularTempoLiquido() {
+
+    const linhas =
+        document.querySelectorAll("#tabela-ctc-body tr");
+
+    linhas.forEach(linha => {
+
+        const tempoBruto =
+            Number(
+                linha.querySelector(".tempo-bruto").value
+            ) || 0;
+
+        const faltas =
+            Number(
+                linha.querySelector(".faltas").value
+            ) || 0;
+
+        const licencaDedutivel =
+            Number(
+                linha.querySelector(".licenca-dedutivel").value
+            ) || 0;
+
+        const suspensao =
+            Number(
+                linha.querySelector(".suspensao").value
+            ) || 0;
+
+        const disponibilidade =
+            Number(
+                linha.querySelector(".disponibilidade").value
+            ) || 0;
+
+        const liquido =
+            tempoBruto
+            - faltas
+            - licencaDedutivel
+            - suspensao
+            - disponibilidade;
+
+        linha.querySelector(".tempo-liquido")
+            .value = liquido;
+
+    });
+
+    somarTempoLiquido();
+
+}
+
+function somarTempoLiquido() {
+
+    const campos =
+        document.querySelectorAll(".tempo-liquido");
+
+    let total = 0;
+
+    campos.forEach(campo => {
+
+        total += Number(campo.value) || 0;
+
+    });
+
+   document.getElementById("total-liquido")
+    .textContent = total;
+}
+
+    const faltas = Number(campoFaltas.value) || 0;
+    

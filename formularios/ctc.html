@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+
+    <title>CERTIDÃO DE TEMPO DE CONTRIBUIÇÃO</title>
+ </head>
+ <body id="formulario">
+         <header class="cabecalho">
+
+            <div class="logo">
+                <img src="../img/logo_govofc.png" width="800"  alt="Logo do governo e dados do órgão de emissão">
+             </div>
+
+           <nav>
+
+                <a
+                 href="../index.html"
+                    class="btn btn-outline-rosa">
+
+                  Voltar ao Menu Principal
+
+                </a>
+
+           </nav>
+        </header>
+
+        <section class="principal">
+            <div class="container">
+                <form action="" id="requerimento">
+
+                    <h4>CERTIDÃO DE TEMPO DE CONTRIBUIÇÃO</h4>
+
+                    <table class="tabform-1">
+                        <tr>
+                            <td colspan="7">
+                                <label for="orgao">ÓRGÃO EXPEDITOR:</label>
+                                <span contenteditable="true" class="campo-inline"></span>
+                            </td>
+                            <td colspan="1">
+                                <label for="cnpj">CNPJ:</label>
+                                <input type="text" name="cnpj" id="cnpj" size="16" maxlength="16">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <label for="nome">NOME DO SERVIDOR:</label>
+                                <span contenteditable="true" class="campo-inline"></span>
+                            </td>
+                            <td colspan="1">
+                                <label for="sexo">SEXO:</label>
+                                <input type="text" name="sexo" id="sexo">
+                            </td>
+                            <td colspan="1">
+                                <label for="matricula">MATRÍCULA:</label>
+                                <input type="number" name="matricula" id="matricula">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <label for="rg">RG/ÓRGÃO EXPEDIDOR: </label>
+                                <input type="text" name="rg" id="rg">
+                            </td>
+                            <td colspan="1">
+                                <label for="cpf">CPF:</label>
+                                <input type="text" name="cpf" id="cpf" value="000.000.000-00">
+                            </td>
+                            <td colspan="1">
+                                <label for="pis">PIS/PASEP:</label>
+                                <input type="text" name="pis" id="pis">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <label for="mae">NOME DA MÃE:</label>
+                                <span contenteditable="true" class="campo-inline"></span>
+                            </td>
+                            <td colspan="2">
+                                <label for="dn">DATA DE NASCIMENTO:</label>
+                                <input type="text" name="dn" id="dn">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="8">
+                                <label for="cargo">CARGO:</label>
+                                <span contenteditable="true" class="campo-inline"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="12">
+                                <label for="lotacao">ÓRGÃO DE LOTAÇÃO:</label>
+                                <span contenteditable="true" class="campo-inline"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                <label for="admissao">DATA DE ADMISSÃO:</label>
+                                <input type="text" name="admissao" id="admissao">
+                            </td>
+                            <td colspan="5">
+                                <label for="exoneracao">DATA DA EXONERAÇÃO:</label>
+                                <input type="text" name="exoneracao" id="exoneracao">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="12">
+                                <label for="fonte">FONTE DE INFORMAÇÃO:</label>
+                                <span contenteditable="true" class="campo-inline"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="12">
+                                <label for="destino"><strong>DESTINAÇÃO DO TEMPO DE CONTRIBUIÇÃO:</strong></label>
+                                PERÍODO DE <input type="text" class="campo-data"> A <input type="text" class="campo-data"> PARA 
+                                APROVEITAMENTO NO (A)<span contenteditable="true" class="campo-inline"></span>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="tabform-2">
+                        <thead>
+                            <tr>
+                                <th colspan="8" class="titulo">FREQUÊNCIA</th>
+                            </tr>
+                            <tr>
+                                <th>ANO</th>
+                                <th>TEMPO BRUTO</th>
+                                <th>FALTAS</th>
+                                <th>LICENÇAS NÃO DEDUTÍVEIS</th>
+                                <th>LICENÇAS DEDUTÍVEIS</th>
+                                <th>SUSPENSÕES</th>
+                                <th>DISPONIBILIDADE</th>
+                                <th>TEMPO LÍQUIDO</th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody class="table-ctc">
+                        
+                            <tr>
+                                <td><input type="number" min="1900" max="2100" class="ano"></td>
+                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
+                                <td><input type="number" min="0" step="1" class="faltas"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="suspensao"></td>
+                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
+                                <td><input type="number" class="tempo-liquido" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="1900" max="2100" class="ano"></td>
+                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
+                                <td><input type="number" min="0" step="1" class="faltas"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="suspensao"></td>
+                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
+                                <td><input type="number" class="tempo-liquido" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="1900" max="2100" class="ano"></td>
+                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
+                                <td><input type="number" min="0" step="1" class="faltas"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="suspensao"></td>
+                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
+                                <td><input type="number" class="tempo-liquido" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="1900" max="2100" class="ano"></td>
+                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
+                                <td><input type="number" min="0" step="1" class="faltas"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="suspensao"></td>
+                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
+                                <td><input type="number" class="tempo-liquido" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="1900" max="2100" class="ano"></td>
+                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
+                                <td><input type="number" min="0" step="1" class="faltas"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="suspensao"></td>
+                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
+                                <td><input type="number" class="tempo-liquido" readonly></td>
+                            </tr>
+                            <tr>
+                                <input type="number" min="1900" max="2100" class="ano"></td>
+                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
+                                <td><input type="number" min="0" step="1" class="faltas"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="suspensao"></td>
+                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
+                                <td><input type="number" class="tempo-liquido" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="1900" max="2100" class="ano"></td>
+                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
+                                <td><input type="number" min="0" step="1" class="faltas"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="suspensao"></td>
+                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
+                                <td><input type="number" class="tempo-liquido" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="1900" max="2100" class="ano"></td>
+                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
+                                <td><input type="number" min="0" step="1" class="faltas"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="suspensao"></td>
+                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
+                                <td><input type="number" class="tempo-liquido" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="1900" max="2100" class="ano"></td>
+                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
+                                <td><input type="number" min="0" step="1" class="faltas"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="suspensao"></td>
+                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
+                                <td><input type="number" class="tempo-liquido" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="1900" max="2100" class="ano"></td>
+                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
+                                <td><input type="number" min="0" step="1" class="faltas"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="suspensao"></td>
+                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
+                                <td><input type="number" class="tempo-liquido" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="1900" max="2100" class="ano"></td>
+                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
+                                <td><input type="number" min="0" step="1" class="faltas"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="suspensao"></td>
+                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
+                                <td><input type="number" class="tempo-liquido" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="1900" max="2100" class="ano"></td>
+                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
+                                <td><input type="number" min="0" step="1" class="faltas"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="suspensao"></td>
+                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
+                                <td><input type="number" class="tempo-liquido" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="1900" max="2100" class="ano"></td>
+                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
+                                <td><input type="number" min="0" step="1" class="faltas"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="suspensao"></td>
+                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
+                                <td><input type="number" class="tempo-liquido" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="1900" max="2100" class="ano"></td>
+                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
+                                <td><input type="number" min="0" step="1" class="faltas"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
+                                <td><input type="number" min="0" step="1" class="suspensao"></td>
+                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
+                                <td><input type="number" class="tempo-liquido" readonly></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="7" style="text-align: right;">TOTAL</td>
+                                <td id="total-liquido">0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    
+                </form>
+            </div>
+        </section>
+
+        <footer class="rodape">
+
+          <img src="../img/logo_ifc.png" class="logoifc"  alt="Logo IFC">
+
+          <div class="endereco">  
+
+           <img src="../img/end_rodape.png"  alt="Endereço da Reitoria IFC">
+
+       </footer>
+
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../js/script.js" defer></script>
+ </body>
+</html>
