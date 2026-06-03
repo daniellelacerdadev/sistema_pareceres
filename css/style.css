@@ -293,7 +293,7 @@ select {
 }
 
 #short   {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5em;
   
 }
@@ -400,7 +400,7 @@ blockquote {
 
 #short blockquote {
     margin: 16px 0 16px 32px;
-    padding: 30px;
+    padding: 20px;
     font-style: italic;
     font-size: 14px;
 }
@@ -421,6 +421,10 @@ blockquote p {
 
 fieldset {
   margin-bottom: 30px;
+}
+
+#short fieldset {
+  margin-bottom: 5px;
 }
 
 #add-quinquenio, #remove-quinquenio, 
@@ -680,9 +684,19 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
     width: 100%;
 
-    margin-top:35%;
+    margin-top: 35%;
+  }
+
+  .very-short footer { 
+    bottom: 0;
+
+    width: 100%;
+
+    margin-top: 50px;
   }
 }
+
+
 
 @media print {
 
