@@ -137,7 +137,7 @@ ul {
 }
 
 
-/*--pareceres--*/
+/*--#parecer e #short--*/
 
 
 html {
@@ -393,7 +393,7 @@ select {
 
 blockquote {
     margin: 16px 0 16px 32px;
-    padding: 30px;
+    padding: 20px;
     font-style: italic;
     font-size: 12px;
 }
@@ -420,11 +420,7 @@ blockquote p {
 }
 
 fieldset {
-  margin-bottom: 30px;
-}
-
-#short fieldset {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 #add-quinquenio, #remove-quinquenio, 
@@ -686,17 +682,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
     margin-top: 35%;
   }
-
-  .very-short footer { 
-    bottom: 0;
-
-    width: 100%;
-
-    margin-top: 50px;
-  }
 }
-
-
 
 @media print {
 
