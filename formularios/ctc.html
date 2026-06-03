@@ -43,17 +43,17 @@
 
                     <table class="tabform-1">
                         <tr>
-                            <td colspan="7">
+                            <td colspan="6">
                                 <label for="orgao">ÓRGÃO EXPEDITOR:</label>
                                 <span contenteditable="true" class="campo-inline"></span>
                             </td>
-                            <td colspan="1">
+                            <td colspan="2">
                                 <label for="cnpj">CNPJ:</label>
                                 <input type="text" name="cnpj" id="cnpj" size="16" maxlength="16">
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="6">
+                            <td colspan="5">
                                 <label for="nome">NOME DO SERVIDOR:</label>
                                 <span contenteditable="true" class="campo-inline"></span>
                             </td>
@@ -61,31 +61,31 @@
                                 <label for="sexo">SEXO:</label>
                                 <input type="text" name="sexo" id="sexo">
                             </td>
-                            <td colspan="1">
+                            <td colspan="2">
                                 <label for="matricula">MATRÍCULA:</label>
                                 <input type="number" name="matricula" id="matricula">
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="6">
+                            <td colspan="4">
                                 <label for="rg">RG/ÓRGÃO EXPEDIDOR: </label>
                                 <input type="text" name="rg" id="rg">
                             </td>
-                            <td colspan="1">
+                            <td colspan="2">
                                 <label for="cpf">CPF:</label>
                                 <input type="text" name="cpf" id="cpf" value="000.000.000-00">
                             </td>
-                            <td colspan="1">
+                            <td colspan="2">
                                 <label for="pis">PIS/PASEP:</label>
                                 <input type="text" name="pis" id="pis">
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="6">
+                            <td colspan="4">
                                 <label for="mae">NOME DA MÃE:</label>
                                 <span contenteditable="true" class="campo-inline"></span>
                             </td>
-                            <td colspan="2">
+                            <td colspan="4">
                                 <label for="dn">DATA DE NASCIMENTO:</label>
                                 <input type="text" name="dn" id="dn">
                             </td>
@@ -97,13 +97,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="12">
+                            <td colspan="8">
                                 <label for="lotacao">ÓRGÃO DE LOTAÇÃO:</label>
                                 <span contenteditable="true" class="campo-inline"></span>
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="7">
+                            <td colspan="3">
                                 <label for="admissao">DATA DE ADMISSÃO:</label>
                                 <input type="text" name="admissao" id="admissao">
                             </td>
@@ -113,185 +113,282 @@
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="12">
+                            <td colspan="8">
                                 <label for="fonte">FONTE DE INFORMAÇÃO:</label>
                                 <span contenteditable="true" class="campo-inline"></span>
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="12">
+                            <td colspan="8">
                                 <label for="destino"><strong>DESTINAÇÃO DO TEMPO DE CONTRIBUIÇÃO:</strong></label>
-                                PERÍODO DE <input type="text" class="campo-data"> A <input type="text" class="campo-data"> PARA 
+                                PERÍODO DE <label for="inicio"><input type="text" name="inicio" id="inicio" class="campo-data"> 
+                                    A <label for="fim"><input type="text" name="fim" id="fim" class="campo-data"> PARA 
                                 APROVEITAMENTO NO (A)<span contenteditable="true" class="campo-inline"></span>
                             </td>
                         </tr>
                     </table>
+
                     <table class="tabform-2">
                         <thead>
                             <tr>
                                 <th colspan="8" class="titulo">FREQUÊNCIA</th>
                             </tr>
                             <tr>
-                                <th>ANO</th>
-                                <th>TEMPO BRUTO</th>
-                                <th>FALTAS</th>
-                                <th>LICENÇAS NÃO DEDUTÍVEIS</th>
-                                <th>LICENÇAS DEDUTÍVEIS</th>
-                                <th>SUSPENSÕES</th>
-                                <th>DISPONIBILIDADE</th>
-                                <th>TEMPO LÍQUIDO</th>
+                                <th><label for="ano">ANO</label></th>
+                                <th><label for="tempo-bruto">TEMPO BRUTO</label></th>
+                                <th><label for="faltas">FALTAS</label></th>
+                                <th><label for="licenca-nao-dedutivel">LICENÇAS NÃO DEDUTÍVEIS</label></th>
+                                <th><label for="licenca-dedutivel">LICENÇAS DEDUTÍVEIS</label></th>
+                                <th><label for="suspensao">SUSPENSÕES</label></th>
+                                <th><label for="disponibilidade">DISPONIBILIDADE</label></th>
+                                <th><label for="tempo-liquido">TEMPO LÍQUIDO</label></th>
                             </tr>
                         </thead>
                     
-                        <tbody class="table-ctc">
+                        <tbody id="tabela-ctc-body" class="table-ctc">
                         
                             <tr>
-                                <td><input type="number" min="1900" max="2100" class="ano"></td>
-                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
-                                <td><input type="number" min="0" step="1" class="faltas"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="suspensao"></td>
-                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
-                                <td><input type="number" class="tempo-liquido" readonly></td>
+                                <td><input type="number" name="ano" id="ano" min="0" step="1" class="ano"></td>
+                                <td><input type="number" name="tempo-bruto" id="tempo-bruto" min="0" step="1" class="tempo-bruto" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="faltas" id="faltas" min="0" step="1" class="faltas" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-nao-dedutivel" id="licenca-nao-dedutivel" min="0" step="1" 
+                                    class="licenca-nao-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-dedutivel" id="licenca-dedutivel" min="0" step="1" 
+                                    class="licenca-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="suspensao" id="suspensao" min="0" step="1" class="suspensao" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="disponibilidade" id="disponibilidade" min="0" step="1" 
+                                    class="disponibilidade" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="tempo-liquido" id="tempo-liquido" class="tempo-liquido" readonly></td>
                             </tr>
                             <tr>
-                                <td><input type="number" min="1900" max="2100" class="ano"></td>
-                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
-                                <td><input type="number" min="0" step="1" class="faltas"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="suspensao"></td>
-                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
-                                <td><input type="number" class="tempo-liquido" readonly></td>
+                               <td><input type="number" name="ano" id="ano" min="0" step="1" class="ano"></td>
+                                <td><input type="number" name="tempo-bruto" id="tempo-bruto" min="0" step="1" class="tempo-bruto" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="faltas" id="faltas" min="0" step="1" class="faltas" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-nao-dedutivel" id="licenca-nao-dedutivel" min="0" step="1" 
+                                    class="licenca-nao-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-dedutivel" id="licenca-dedutivel" min="0" step="1" 
+                                    class="licenca-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="suspensao" id="suspensao" min="0" step="1" class="suspensao" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="disponibilidade" id="disponibilidade" min="0" step="1" 
+                                    class="disponibilidade"></td>
+                                <td><input type="number" name="tempo-liquido" id="tempo-liquido" class="tempo-liquido" readonly></td>
                             </tr>
                             <tr>
-                                <td><input type="number" min="1900" max="2100" class="ano"></td>
-                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
-                                <td><input type="number" min="0" step="1" class="faltas"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="suspensao"></td>
-                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
-                                <td><input type="number" class="tempo-liquido" readonly></td>
+                                <td><input type="number" name="ano" id="ano" min="0" step="1" class="ano"></td>
+                                <td><input type="number" name="tempo-bruto" id="tempo-bruto" min="0" step="1" class="tempo-bruto" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="faltas" id="faltas" min="0" step="1" class="faltas" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-nao-dedutivel" id="licenca-nao-dedutivel" min="0" step="1" 
+                                    class="licenca-nao-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-dedutivel" id="licenca-dedutivel" min="0" step="1" 
+                                    class="licenca-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="suspensao" id="suspensao" min="0" step="1" class="suspensao" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="disponibilidade" id="disponibilidade" min="0" step="1" 
+                                    class="disponibilidade" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="tempo-liquido" id="tempo-liquido" class="tempo-liquido" readonly></td>
                             </tr>
                             <tr>
-                                <td><input type="number" min="1900" max="2100" class="ano"></td>
-                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
-                                <td><input type="number" min="0" step="1" class="faltas"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="suspensao"></td>
-                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
-                                <td><input type="number" class="tempo-liquido" readonly></td>
+                               <td><input type="number" name="ano" id="ano" min="0" step="1" class="ano"></td>
+                                <td><input type="number" name="tempo-bruto" id="tempo-bruto" min="0" step="1" class="tempo-bruto" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="faltas" id="faltas" min="0" step="1" class="faltas" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-nao-dedutivel" id="licenca-nao-dedutivel" min="0" step="1" 
+                                    class="licenca-nao-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-dedutivel" id="licenca-dedutivel" min="0" step="1" 
+                                    class="licenca-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="suspensao" id="suspensao" min="0" step="1" class="suspensao" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="disponibilidade" id="disponibilidade" min="0" step="1" 
+                                    class="disponibilidade" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="tempo-liquido" id="tempo-liquido" class="tempo-liquido" readonly></td>
                             </tr>
                             <tr>
-                                <td><input type="number" min="1900" max="2100" class="ano"></td>
-                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
-                                <td><input type="number" min="0" step="1" class="faltas"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="suspensao"></td>
-                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
-                                <td><input type="number" class="tempo-liquido" readonly></td>
+                                <td><input type="number" name="ano" id="ano" min="0" step="1" class="ano"></td>
+                                <td><input type="number" name="tempo-bruto" id="tempo-bruto" min="0" step="1" class="tempo-bruto" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="faltas" id="faltas" min="0" step="1" class="faltas" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-nao-dedutivel" id="licenca-nao-dedutivel" min="0" step="1" 
+                                    class="licenca-nao-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-dedutivel" id="licenca-dedutivel" min="0" step="1" 
+                                    class="licenca-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="suspensao" id="suspensao" min="0" step="1" class="suspensao" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="disponibilidade" id="disponibilidade" min="0" step="1" 
+                                    class="disponibilidade" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="tempo-liquido" id="tempo-liquido" class="tempo-liquido" readonly></td>
                             </tr>
                             <tr>
-                                <input type="number" min="1900" max="2100" class="ano"></td>
-                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
-                                <td><input type="number" min="0" step="1" class="faltas"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="suspensao"></td>
-                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
-                                <td><input type="number" class="tempo-liquido" readonly></td>
+                               <td><input type="number" name="ano" id="ano" min="0" step="1" class="ano"></td>
+                                <td><input type="number" name="tempo-bruto" id="tempo-bruto" min="0" step="1" class="tempo-bruto" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="faltas" id="faltas" min="0" step="1" class="faltas" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-nao-dedutivel" id="licenca-nao-dedutivel" min="0" step="1" 
+                                    class="licenca-nao-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-dedutivel" id="licenca-dedutivel" min="0" step="1" 
+                                    class="licenca-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="suspensao" id="suspensao" min="0" step="1" class="suspensao" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="disponibilidade" id="disponibilidade" min="0" step="1" 
+                                    class="disponibilidade" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="tempo-liquido" id="tempo-liquido" class="tempo-liquido" readonly></td>
                             </tr>
                             <tr>
-                                <td><input type="number" min="1900" max="2100" class="ano"></td>
-                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
-                                <td><input type="number" min="0" step="1" class="faltas"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="suspensao"></td>
-                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
-                                <td><input type="number" class="tempo-liquido" readonly></td>
+                               <td><input type="number" name="ano" id="ano" min="0" step="1" class="ano"></td>
+                                <td><input type="number" name="tempo-bruto" id="tempo-bruto" min="0" step="1" class="tempo-bruto" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="faltas" id="faltas" min="0" step="1" class="faltas" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-nao-dedutivel" id="licenca-nao-dedutivel" min="0" step="1" 
+                                    class="licenca-nao-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-dedutivel" id="licenca-dedutivel" min="0" step="1" 
+                                    class="licenca-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="suspensao" id="suspensao" min="0" step="1" class="suspensao" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="disponibilidade" id="disponibilidade" min="0" step="1" 
+                                    class="disponibilidade" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="tempo-liquido" id="tempo-liquido" class="tempo-liquido" readonly></td>
                             </tr>
                             <tr>
-                                <td><input type="number" min="1900" max="2100" class="ano"></td>
-                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
-                                <td><input type="number" min="0" step="1" class="faltas"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="suspensao"></td>
-                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
-                                <td><input type="number" class="tempo-liquido" readonly></td>
+                              <td><input type="number" name="ano" id="ano" min="0" step="1" class="ano"></td>
+                                <td><input type="number" name="tempo-bruto" id="tempo-bruto" min="0" step="1" class="tempo-bruto" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="faltas" id="faltas" min="0" step="1" class="faltas" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-nao-dedutivel" id="licenca-nao-dedutivel" min="0" step="1" 
+                                    class="licenca-nao-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-dedutivel" id="licenca-dedutivel" min="0" step="1" 
+                                    class="licenca-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="suspensao" id="suspensao" min="0" step="1" class="suspensao" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="disponibilidade" id="disponibilidade" min="0" step="1" 
+                                    class="disponibilidade" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="tempo-liquido" id="tempo-liquido" class="tempo-liquido" readonly></td>
                             </tr>
                             <tr>
-                                <td><input type="number" min="1900" max="2100" class="ano"></td>
-                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
-                                <td><input type="number" min="0" step="1" class="faltas"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="suspensao"></td>
-                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
-                                <td><input type="number" class="tempo-liquido" readonly></td>
+                               <td><input type="number" name="ano" id="ano" min="0" step="1" class="ano"></td>
+                                <td><input type="number" name="tempo-bruto" id="tempo-bruto" min="0" step="1" class="tempo-bruto" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="faltas" id="faltas" min="0" step="1" class="faltas" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-nao-dedutivel" id="licenca-nao-dedutivel" min="0" step="1" 
+                                    class="licenca-nao-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-dedutivel" id="licenca-dedutivel" min="0" step="1" 
+                                    class="licenca-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="suspensao" id="suspensao" min="0" step="1" class="suspensao" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="disponibilidade" id="disponibilidade" min="0" step="1" 
+                                    class="disponibilidade" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="tempo-liquido" id="tempo-liquido" class="tempo-liquido" readonly></td>
                             </tr>
                             <tr>
-                                <td><input type="number" min="1900" max="2100" class="ano"></td>
-                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
-                                <td><input type="number" min="0" step="1" class="faltas"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="suspensao"></td>
-                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
-                                <td><input type="number" class="tempo-liquido" readonly></td>
+                               <td><input type="number" name="ano" id="ano" min="0" step="1" class="ano"></td>
+                                <td><input type="number" name="tempo-bruto" id="tempo-bruto" min="0" step="1" class="tempo-bruto" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="faltas" id="faltas" min="0" step="1" class="faltas" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-nao-dedutivel" id="licenca-nao-dedutivel" min="0" step="1" 
+                                    class="licenca-nao-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-dedutivel" id="licenca-dedutivel" min="0" step="1" 
+                                    class="licenca-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="suspensao" id="suspensao" min="0" step="1" class="suspensao" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="disponibilidade" id="disponibilidade" min="0" step="1" 
+                                    class="disponibilidade" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="tempo-liquido" id="tempo-liquido" class="tempo-liquido" readonly></td>
                             </tr>
                             <tr>
-                                <td><input type="number" min="1900" max="2100" class="ano"></td>
-                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
-                                <td><input type="number" min="0" step="1" class="faltas"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="suspensao"></td>
-                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
-                                <td><input type="number" class="tempo-liquido" readonly></td>
+                              <td><input type="number" name="ano" id="ano" min="0" step="1" class="ano"></td>
+                                <td><input type="number" name="tempo-bruto" id="tempo-bruto" min="0" step="1" class="tempo-bruto" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="faltas" id="faltas" min="0" step="1" class="faltas" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-nao-dedutivel" id="licenca-nao-dedutivel" min="0" step="1" 
+                                    class="licenca-nao-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-dedutivel" id="licenca-dedutivel" min="0" step="1" 
+                                    class="licenca-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="suspensao" id="suspensao" min="0" step="1" class="suspensao" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="disponibilidade" id="disponibilidade" min="0" step="1" 
+                                    class="disponibilidade" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="tempo-liquido" id="tempo-liquido" class="tempo-liquido" readonly></td>
                             </tr>
                             <tr>
-                                <td><input type="number" min="1900" max="2100" class="ano"></td>
-                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
-                                <td><input type="number" min="0" step="1" class="faltas"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="suspensao"></td>
-                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
-                                <td><input type="number" class="tempo-liquido" readonly></td>
+                               <td><input type="number" name="ano" id="ano" min="0" step="1" class="ano"></td>
+                                <td><input type="number" name="tempo-bruto" id="tempo-bruto" min="0" step="1" class="tempo-bruto" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="faltas" id="faltas" min="0" step="1" class="faltas" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-nao-dedutivel" id="licenca-nao-dedutivel" min="0" step="1" 
+                                    class="licenca-nao-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-dedutivel" id="licenca-dedutivel" min="0" step="1" 
+                                    class="licenca-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="suspensao" id="suspensao" min="0" step="1" class="suspensao" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="disponibilidade" id="disponibilidade" min="0" step="1" 
+                                    class="disponibilidade" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="tempo-liquido" id="tempo-liquido" class="tempo-liquido" readonly></td>
                             </tr>
                             <tr>
-                                <td><input type="number" min="1900" max="2100" class="ano"></td>
-                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
-                                <td><input type="number" min="0" step="1" class="faltas"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="suspensao"></td>
-                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
-                                <td><input type="number" class="tempo-liquido" readonly></td>
+                              <td><input type="number" name="ano" id="ano" min="0" step="1" class="ano"></td>
+                                <td><input type="number" name="tempo-bruto" id="tempo-bruto" min="0" step="1" class="tempo-bruto" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="faltas" id="faltas" min="0" step="1" class="faltas" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-nao-dedutivel" id="licenca-nao-dedutivel" min="0" step="1" 
+                                    class="licenca-nao-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="licenca-dedutivel" id="licenca-dedutivel" min="0" step="1" 
+                                    class="licenca-dedutivel" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="suspensao" id="suspensao" min="0" step="1" class="suspensao" 
+                                    oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="disponibilidade" id="disponibilidade" min="0" step="1" 
+                                    class="disponibilidade" oninput="calcularTempoLiquido()"></td>
+                                <td><input type="number" name="tempo-liquido" id="tempo-liquido" class="tempo-liquido" readonly></td>
                             </tr>
-                            <tr>
-                                <td><input type="number" min="1900" max="2100" class="ano"></td>
-                                <td><input type="number" min="0" step="1" class="tempo-bruto"></td>
-                                <td><input type="number" min="0" step="1" class="faltas"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="licenca-nao-dedutivel"></td>
-                                <td><input type="number" min="0" step="1" class="suspensao"></td>
-                                <td><input type="number" min="0" step="1" class="disponibilidade"></td>
-                                <td><input type="number" class="tempo-liquido" readonly></td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="7" style="text-align: right;">TOTAL</td>
+                            <tr class="total">
+                                <td colspan="7">TOTAL</td>
                                 <td id="total-liquido">0</td>
                             </tr>
-                        </tfoot>
+                            <tr class="certificacao">
+                                <td colspan="8">
+                                    <strong>CERTIFICO</strong>, em face do apurado, que o interessado conta, de efetivo exercício prestado
+                                     neste Órgão, o tempo de contribuição de <input type="number"> (<span class="dias-extenso" contenteditable="true">   
+                                     </span>) dias, correspondentes a <span class="tempo-total" contenteditable="true"></span>. <br>
+                                 <strong>OBSERVAÇÕES: Da admissão: </strong> Nomeado para o Instituto Federal Catarinense (IFC), por meio da
+                                 Portaria <input type="text" size="9" maxlength="9" class="portaria"> de <input type="text" class="campo-data"> - DOU de 
+                                <input type="text" class="campo-data">, para ocupar o cargo efetivo de <span contenteditable="true"></span>, em regime
+                                 de trabalho de <input type="number" size="2" maxlength="2" class="numero"> horas semanais, tendo tomado posse
+                                em <input type="text" class="campo-data"> e entrado em efetivo exercício em <input type="text" class="campo-data"> 
+                                sendo regido(a) pela Lei nº 8.112 de 11/12/1990, contribuindo para o Regime Próprio de Previdência dos Servidores 
+                                Públicos Federais, de acordo com os arts. 183 e 184 do Regime Jurídico Único dos Servidores Públicos da União, das 
+                                Autarquias e das Fundações Públicas Federais, consoante o disposto no artigo 4º da Emenda Constitucional nº 20/98. 
+                                Servidor vinculado ao RPC. 
+                                <strong> Da vacância: </strong> a partir de <input type="text" class="campo-data"> nos termos do art. 33, inciso 
+                                VIII, da Lei nº 8.112/1990, por posse outro cargo inacumulavel, conforme Portaria <input type="text" size="9" 
+                                maxlength="9" class="portaria">, publicada no  DOU em <input type="text" class="campo-data">.<strong> Férias, Licenças e Afastamentos: 
+                              </strong> o servidor esteve em Licença Capacitação, conforme Art 25 - Dec 9991/2019  no período de 
+                                <span contenteditable="true" class="campo-certifica"></span>. Das férias do exercício de <input type="number" 
+                                name="ano" id="ano" min="0" step="1" class="ano"> foram usufruídos <input type="number" size="2" maxlength="2" 
+                                class="numero"> días, de <span contenteditable="true" class="campo-certifica"></span>, restando <input type="number" size="2" maxlength="2" 
+                                class="numero"> dias, a princípio agendadas para <span contenteditable="true" class="campo-certifica"></span>.
+                                <strong> CERTIFICO </strong> que a Lei nº 8.112, de 11/12/1990, assegura aos servidores públicos civis da União, 
+                                das autarquias e das fundações públicas federais: aposentadorias voluntárias, por invalidez e compulsória, e
+                                 pensão por morte, com aproveitamento de tempo de contribuição para o regime geral da Previdência Social ou para
+                                  outro Regime Próprio de Previdência Social, na forma da contagem recíproca, conforme Lei Federal nº 6.226, de 
+                                  14/07/1975, com alteração dada pela Lei Federal nº 6.864, de 01/12/1980.
+                              </td>
+                            </tr>
+                        </tbody>
                     </table>
                     
                 </form>

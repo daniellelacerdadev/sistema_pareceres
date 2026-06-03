@@ -255,5 +255,5 @@ function somarTempoLiquido() {
     .textContent = total;
 }
 
-    const faltas = Number(campoFaltas.value) || 0;
+    
     
