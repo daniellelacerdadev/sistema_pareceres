@@ -50,9 +50,9 @@ function gerarPDF() {
 
 }
 
-const iniciolic = document.getElementById("iniciolic");
+const iniciolic = document.getElementById("inicio-lic");
 
-const fimlic = document.getElementById("fimlic");
+const fimlic = document.getElementById("fim-lic");
 
 
 if (iniciolic && fimlic) {
@@ -86,7 +86,7 @@ if (inicioprorrog && fimprorrog) {
 
         const dataInicial = new Date(inicioprorrog.value);
 
-        dataInicial.setDate(dataInicial.getDate() + 120);
+        dataInicial.setDate(dataInicial.getDate() + 60);
 
         const dia = String(dataInicial.getDate()).padStart(2, "0");
 
