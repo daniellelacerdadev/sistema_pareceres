@@ -522,6 +522,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   font-weight: 500;
 }
 
+
+
 #formulario input{
   border: none;
   background: transparent;
@@ -539,7 +541,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   
 }
 
-.tabform-1 td, .tabform-2 td {
+.tabform-1 td, .tabform-2 td, .tabform-3 td {
   border: #000 solid 1px;
 }
 
@@ -548,6 +550,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     width: 100%;
     border-collapse: collapse;
     margin: 0;
+}
+
+.tabform-3 {
+  margin-top: 20px;
+  width: 100%;
 }
 
 
@@ -580,20 +587,19 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .ano, .tempo-bruto, .faltas, 
   .licença-dedutivel, .licença-nao-dedutivel, 
-  .suspensao, .disponibilidade {
-  font-size: 14px;
+  .suspensao, .disponibilidade, .mes, .valor {
   width: 40px;
   text-align: center;
 }
 
+
 .total td {
   text-align: right;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .certificacao td {
-  font-size: 12px;
   text-align: justify;
   line-height: 1.4;
 
@@ -635,6 +641,55 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   font-weight: 500;
   outline: none;
   white-space: pre-wrap;
+}
+
+.assinaturas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.assinaturas td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+.cabecalho-assinatura td {
+    border-bottom: none;
+    margin-top: 50px;
+}
+
+.assinatura {
+    border-top: none !important;
+}
+
+.linha-assinatura {
+    border-top: 2px solid #000;
+    width: 95%;
+    margin: 0 auto 8px auto;
+}
+
+.reitor {
+    text-align: center;
+}
+
+#formulario footer {
+  margin-top: 40px;
+}
+
+#formulario .button-pdf {
+    font-weight: bolder;
+    background-color: #2f5e2f;
+    width: 120px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
 /*--@media--*/
