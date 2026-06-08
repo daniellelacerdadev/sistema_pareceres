@@ -197,6 +197,11 @@ function calcularTempoLiquido() {
 
     linhas.forEach(linha => {
 
+        // ignora a linha TOTAL
+        if (!linha.querySelector(".tempo-bruto")) {
+            return;
+        }
+
         const tempoBruto =
             Number(
                 linha.querySelector(".tempo-bruto").value
@@ -205,6 +210,11 @@ function calcularTempoLiquido() {
         const faltas =
             Number(
                 linha.querySelector(".faltas").value
+            ) || 0;
+
+        const licencaNaoDedutivel =
+            Number(
+                linha.querySelector(".licenca-nao-dedutivel").value
             ) || 0;
 
         const licencaDedutivel =
@@ -225,6 +235,7 @@ function calcularTempoLiquido() {
         const liquido =
             tempoBruto
             - faltas
+            - licencaNaoDedutivel
             - licencaDedutivel
             - suspensao
             - disponibilidade;
@@ -235,7 +246,6 @@ function calcularTempoLiquido() {
     });
 
     somarTempoLiquido();
-
 }
 
 function somarTempoLiquido() {
@@ -246,14 +256,92 @@ function somarTempoLiquido() {
     let total = 0;
 
     campos.forEach(campo => {
-
         total += Number(campo.value) || 0;
+    });
+
+    document.getElementById("total-liquido")
+        .textContent = total;
+
+    document.getElementById("total-liquido2")
+        .textContent = total;
+
+    const tempo = converterTempo(total);
+
+    document.getElementById("anos")
+        .textContent =
+        `${tempo.anos} anos, `;
+
+    document.getElementById("meses")
+        .textContent =
+        `${tempo.meses} meses e `;
+
+    document.getElementById("dias")
+        .textContent =
+        `${tempo.dias} dias`;
+
+}
+
+function converterTempo(totalDias) {
+
+    const anos = Math.floor(totalDias / 365);
+
+    let resto = totalDias % 365;
+
+    const meses = Math.floor(resto / 30);
+
+    resto = resto % 30;
+
+    const dias = resto;
+
+    return { anos, meses, dias };
+
+}
+
+
+    
+ function sincronizarSpan(origemId, destinoId) {
+    const origem = document.getElementById(origemId);
+    const destino = document.getElementById(destinoId);
+
+    if (!origem || !destino) return;
+
+    origem.addEventListener("input", () => {
+        destino.textContent = origem.textContent;
+    });
+}
+
+
+function sincronizarInput(origemId, destinoId) {
+
+    const origem = document.getElementById(origemId);
+    const destino = document.getElementById(destinoId);
+
+    if (!origem || !destino) return;
+
+    origem.addEventListener("input", () => {
+
+        if ("value" in destino) {
+            destino.value = origem.value;
+        } else {
+            destino.textContent = origem.value;
+        }
 
     });
 
-   document.getElementById("total-liquido")
-    .textContent = total;
 }
 
-    
-    
+sincronizarSpan("orgao", "orgao2");
+sincronizarSpan("nomeServidor", "nomeServidor2");
+sincronizarSpan("cargo", "cargo2");
+sincronizarSpan("nomeMae", "nomeMae2");
+
+
+
+sincronizarInput("cnpj", "cnpj2");
+sincronizarInput("matricula", "matricula2");
+sincronizarInput("cpf", "cpf2");
+sincronizarInput("pis", "pis2");
+sincronizarInput("dn", "dn2");
+sincronizarInput("admissao", "admissao2");
+sincronizarInput("exoneracao", "exoneracao2");
+

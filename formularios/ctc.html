@@ -45,7 +45,7 @@
                         <tr>
                             <td colspan="6">
                                 <label for="orgao">ÓRGÃO EXPEDIDOR:</label>
-                                <span contenteditable="true" class="campo-inline"></span>
+                                <span contenteditable="true" class="campo-inline" id="orgao"></span>
                             </td>
                             <td colspan="2">
                                 <label for="cnpj">CNPJ:</label>
@@ -55,7 +55,7 @@
                         <tr>
                             <td colspan="5">
                                 <label for="nome">NOME DO SERVIDOR:</label>
-                                <span contenteditable="true" class="campo-inline"></span>
+                                <span contenteditable="true" class="campo-inline" id="nomeServidor"></span>
                             </td>
                             <td colspan="1">
                                 <label for="sexo">SEXO:</label>
@@ -83,7 +83,7 @@
                         <tr>
                             <td colspan="4">
                                 <label for="mae">NOME DA MÃE:</label>
-                                <span contenteditable="true" class="campo-inline"></span>
+                                <span contenteditable="true" class="campo-inline" id="nomeMae"></span>
                             </td>
                             <td colspan="4">
                                 <label for="dn">DATA DE NASCIMENTO:</label>
@@ -93,7 +93,7 @@
                         <tr>
                             <td colspan="8">
                                 <label for="cargo">CARGO:</label>
-                                <span contenteditable="true" class="campo-inline"></span>
+                                <span contenteditable="true" class="campo-inline" id="cargo"></span>
                             </td>
                         </tr>
                         <tr>
@@ -362,8 +362,9 @@
                             <tr class="certificacao">
                                 <td colspan="8">
                                     <strong>CERTIFICO</strong>, em face do apurado, que o interessado conta, de efetivo exercício prestado
-                                     neste Órgão, o tempo de contribuição de <input type="number"> (<span class="dias-extenso" contenteditable="true">   
-                                     </span>) dias, correspondentes a <span class="tempo-total" contenteditable="true"></span>. <br>
+                                     neste Órgão, o tempo de contribuição de <span id="total-liquido2"></span>(<span class="dias-extenso"
+                                      contenteditable="true"> </span>) dias, correspondentes a <span id="anos"></span><span id="meses"></span>
+                                      <span id="dias"></span>. <br>
                                  <strong>OBSERVAÇÕES: Da admissão: </strong> Nomeado para o Instituto Federal Catarinense (IFC), por meio da
                                  Portaria <input type="text" size="9" maxlength="9" class="portaria"> de <input type="text" class="campo-data"> - DOU de 
                                 <input type="text" class="campo-data">, para ocupar o cargo efetivo de <span contenteditable="true"></span>, em regime
@@ -458,49 +459,49 @@
                     <table class="tabform-1">
                         <tr>
                             <td colspan="5">
-                                <label for="orgao">ÓRGÃO EXPEDITOR:</label>
-                                <span contenteditable="true" class="campo-inline"></span>
+                                <label for="orgao">ÓRGÃO EXPEDIDOR:</label>
+                                <span contenteditable="true" class="campo-inline" id="orgao2"></span>
                             </td>
                             <td colspan="2">
                                 <label for="cnpj">CNPJ:</label>
-                                <input type="text" name="cnpj" id="cnpj" size="16" maxlength="16">
+                                <input type="text" name="cnpj" id="cnpj2" size="16" maxlength="16">
                             </td>
                         </tr>
                         <tr>
                             <td colspan="5">
                                 <label for="nome">NOME DO SERVIDOR:</label>
-                                <span contenteditable="true" class="campo-inline"></span>
+                                <span contenteditable="true" class="campo-inline" id="nomeServidor2"></span>
                             </td>
                             <td colspan="2">
                                 <label for="matricula">MATRÍCULA:</label>
-                                <input type="number" name="matricula" id="matricula">
+                                <input type="number" name="matricula" id="matricula2">
                         </tr>
                                                 <tr>
                             <td colspan="5">
                                 <label for="mae">NOME DA MÃE:</label>
-                                <span contenteditable="true" class="campo-inline"></span>
+                                <span contenteditable="true" class="campo-inline" id="nomeMae2"></span>
                             </td>
                             <td colspan="2">
                                 <label for="dn">DATA DE NASCIMENTO:</label>
-                                <input type="text" name="dn" id="dn">
+                                <input type="text" name="dn" id="dn2">
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2">
                                 <label for="admissao">DATA DE ADMISSÃO:</label>
-                                <input type="text" name="admissao" id="admissao">
+                                <input type="text" name="admissao" id="admissao2">
                             </td>
                             <td colspan="2">
-                                <label for="vacancia">DATA DA VACÂNCIA:</label>
-                                <input type="text" name="vacancia" id="vacancia">
+                                <label for="exoneracao">DATA DA VACÂNCIA:</label>
+                                <input type="text" name="vacancia" id="exoneracao2">
                             </td>
                             <td colspan="1">
                                 <label for="pis">PIS/PASEP:</label>
-                                <input type="text" name="pis" id="pis">
+                                <input type="text" name="pis" id="pis2">
                             </td>
                             <td colspan="2">
                                 <label for="cpf">CPF:</label>
-                                <input type="text" name="cpf" id="cpf" value="000.000.000-00">
+                                <input type="text" name="cpf" id="cpf2" value="000.000.000-00">
                             </td>
                         </tr>
                         <tr>
@@ -672,6 +673,7 @@
                             <td>R$<input type="text" name="valor" id="valor"></td>
                         </tr>
                     </table>
+                    <h6>Continua...</h6>
                     
                     <table class="tabform-3">
                         <tr>
@@ -841,7 +843,7 @@
                             <td>R$<input type="text" name="valor" id="valor"></td>
                         </tr>
                     </table>
-                    <h6>continua</h6>
+                   
                     <table class="tabform-3">
                         <tr>
                             <td rowspan="2" class="mes">

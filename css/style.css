@@ -516,6 +516,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 /*--formulários--*/
 
 #formulario {
+  width: 100%;
   font-family: "Calibri", "Segoe UI", Arial, sans-serif;
   font-size: 12px;
   line-height: 1.2em;
@@ -690,6 +691,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     border: none;
     border-radius: 12px;
     cursor: pointer;
+}
+
+.assinaturas, .tabform-3 {
+    break-inside: avoid;
+    page-break-inside: avoid;
 }
 
 /*--@media--*/
