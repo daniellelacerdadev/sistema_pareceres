@@ -498,6 +498,20 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   margin-bottom: 10px;
 }
 
+.shorter {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 0;
+     align-items: center;
+     border-top: 1px solid #ccc;
+     padding-top: 20px;
+}
+
+.shorter img {
+   width: 150px;
+   margin-bottom: 10px;
+}
+
 .logoifc {
     justify-content: left;
     width: 180px;
@@ -722,7 +736,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 @media print {
 
-  footer {
+  .rodape {
  
     bottom: 0;
 
@@ -736,7 +750,17 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 @media print {
-  #short footer {
+  #short rodape {
+    bottom: 0;
+
+    width: 100%;
+
+    margin-top: 50%;
+  }
+}
+
+@media print {
+  .shorter {
     bottom: 0;
 
     width: 100%;
@@ -744,6 +768,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     margin-top: 35%;
   }
 }
+
+
 
 @media print {
 
