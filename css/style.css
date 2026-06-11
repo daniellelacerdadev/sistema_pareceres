@@ -196,7 +196,7 @@ header img {
 }
 
 .tramitacao {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .tabela {
@@ -765,7 +765,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
     width: 100%;
 
-    margin-top: 35%;
+    margin-top: 35px;
   }
 }
 
