@@ -384,9 +384,18 @@ select {
    text-align: center;
    padding: 2px 6px;
 }
+
+ #cargatotal2, #cargatotal3, #dias2, #dias3 .campo-inline {
+  min-width: 50px;
+  width: 55px;
+  text-align: center;
+  border-radius: 10px;
+
+ }
     
    #cargatotal, #cargasem, #dias {
     width: 55px;
+    min-width: 40px;
     border-radius: 10px;
     text-align: center;
 }

@@ -58,7 +58,7 @@
                             <tr>
                                 <th>Requerente:</th>
        
-                                <td><input type="text" placeholder="Digite o nome do servidor requerente" width="100%"></td>
+                                <td><input type="text" placeholder="Digite o nome do servidor requerente" id="requerente"  width="100%"></td>
                              </tr>
                             <tr>
                                 <th>Origem:</th>
@@ -66,7 +66,7 @@
                             </tr>
                             <tr>
                                 <th>Data da tramitação:</th>
-                                <td><input  type="text" id="data-emissao"  width="100%" align-self-center>  </td>
+                                <td><input  type="text" id="data-emissao" width="100%" align-self-center>  </td>
                             </tr>
                         </tbody>
                     </table>
@@ -79,10 +79,10 @@
                 <form>
                         <p> 
                             Trata-se de solicitação de LICENÇA PARA CAPACITAÇÃO do(a) servidor(a) Requerente <span contenteditable="true"
-                        class="campo-inline"></span>, ocupante do cargo <span contenteditable="true" class="campo-inline"></span>, 
+                        class="campo-inline" id="requerente2"></span>, ocupante do cargo <span contenteditable="true" class="campo-inline" id="cargo"></span>, 
                          o (a) qual requer a utilização da referida licença para a realização das seguintes atividades: <span contenteditable="true" 
-                         class="campo-grande"> </span> com carga horária total de <input type="text" size="5"> horas,
-                          para o período de <input type="number" class="input-numero"> dias.
+                         class="campo-grande"> </span> com carga horária total de <input type="text" size="5" id="cargatotal" oninput="calcularCargaHoraria()"> horas,
+                          para o período de <input type="number" class="input-numero" id="dias" oninput="calcularCargaHoraria()"> dias.
                         </p>
                         <p>
                          A Licença para Capacitação está prevista no Art. 87 da Lei no 8.112/1990, in verbis:
@@ -221,10 +221,10 @@
 
                         <p>
                             Ao verificarmos o plano de curso encaminhado pelo servidor para o período proposto, vemos que a carga horária total 
-                         de <input type="number" id="cargatotal" oninput="calcularCargaHoraria()"> horas dividida por <input type="number" id="dias" oninput="calcularCargaHoraria()"> dias de licença e multiplicada por 07 
-                        dias semanais ( <input type="number" id="cargatotal" oninput="calcularCargaHoraria()"> ÷ <input type="number" id="dias" oninput="calcularCargaHoraria()"> × 7), culminou no seguinte 
-                        resultado: <input type="text" id="cargasem" oninput="calcularCargaHoraria()">horas semanais, atendendo ao disposto na <strong>Nota Técnica SEI nº 7737/2020/ME e 
-                        no art. 26 do Decreto nº 9.991/2019, quanto à carga horária mínima prevista para as ações de capacitação.</strong>
+                         de <span id="cargatotal2" class="campo-inline"></span> horas dividida por <span id="dias2" class="campo-inline"></span> dias de licença e multiplicada por 07 dias 
+                         semanais ( <span id="cargatotal3" class="campo-inline"></span> ÷ <span id="dias3" class="campo-inline"></span> × 7), culminou no seguinte resultado: 
+                         <input type="number" id="cargasem" oninput="calcularCargaHoraria()">horas semanais, atendendo ao disposto na <strong>
+                            Nota Técnica SEI nº 7737/2020/ME e no art. 26 do Decreto nº 9.991/2019, quanto à carga horária mínima prevista para as ações de capacitação.</strong>
                         </p>
                         <p>
                               Nesse sentido, ao término da licença, o(a) servidor(a) interessado(a) deverá apresentar, no prazo máximo 
@@ -324,8 +324,9 @@
                         <p>
                              Neste sentido, considerando a concordância da Chefia Imediata e da Direção-Geral do Campus (ou Pró-Reitoria) 
                          com a proposta de licença capacitação apresentada pelo(a) servidor(a) interessado(a), esta Diretoria de Gestão de 
-                        Pessoas é favorável à concessão da Licença para Capacitação ao (à) servidor (a) <span contenteditable="true" class="campo-inline"></span>, 
-                        ocupante do cargo de <span contenteditable="true" class="campo-inline"></span>, Matrícula SIAPE nº 
+                        Pessoas é favorável à concessão da Licença para Capacitação ao (à) servidor (a) <span contenteditable="true" 
+                        class="campo-inline" id="requerente3"></span>, 
+                        ocupante do cargo de <span contenteditable="true" class="campo-inline" id="cargo2"></span>, Matrícula SIAPE nº 
                           <input type="text" size="7" maxlength="7"> lotado no(a) 
                           <select name="lotacao">
                             <option>Campus Abelardo Luz</option>
@@ -350,7 +351,7 @@
                               Lei nº 9.527, de 10 de dezembro de 1997, e na Nota técnica  SEI nº 43661/2022/ME, combinados com o art. 25 da 
                               Lei nº 9.527, de 10 de dezembro de 1997, com nova redação dada pelo Decreto nº 10.506, de 2 de outubro de 2020, 
                               referente ao quinquênio compreendido entre  <input type="text"  value="--/--/----"> a 
-                             <input type="text"  value="--/--/----">, pelo prazo <input type="number" class="input-numero"> dias,  
+                             <input type="text"  value="--/--/----">, pelo prazo <input type="number" class="input-numero" id="dias4"> dias,  
                              de <input type="text" value="--/--/----"> a <input type="text" value="--/--/----">. 
                             A licença Capacitação foi concedida para ação de desenvolvimento presencial ou à distância, conforme art. 25, I, 
                             do Decreto 9.991/2019; código 

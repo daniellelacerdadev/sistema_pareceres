@@ -29,6 +29,7 @@ function calcularCargaHoraria() {
 
     document.getElementById("cargasem").value =
       resultado;
+
    }
 }
 
@@ -345,3 +346,41 @@ sincronizarInput("dn", "dn2");
 sincronizarInput("admissao", "admissao2");
 sincronizarInput("exoneracao", "exoneracao2");
 
+
+
+function sincronizarMultiplos(origemId, destinos) {
+
+    const origem = document.getElementById(origemId);
+
+    if (!origem) return;
+
+    origem.addEventListener("input", () => {
+
+        destinos.forEach(id => {
+
+            const destino = document.getElementById(id);
+
+            if (!destino) return;
+
+            destino.textContent = origem.value;
+
+        });
+
+    });
+
+}
+
+sincronizarMultiplos(
+    "requerente",
+    ["requerente2", "requerente3"]
+);
+
+sincronizarMultiplos(
+    "cargatotal",
+    ["cargatotal2", "cargatotal3"]
+);
+
+sincronizarMultiplos(
+    "dias",
+    ["dias2", "dias3", "dias4"]
+);
