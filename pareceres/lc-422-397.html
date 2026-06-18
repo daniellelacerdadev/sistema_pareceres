@@ -58,7 +58,8 @@
                             <tr>
                                 <th>Requerente:</th>
        
-                                <td><input type="text" placeholder="Digite o nome do servidor requerente" width="100%"></td>
+                                <td><input type="text" placeholder="Digite o nome do servidor requerente" 
+                                    width="100%" id="requerente"></td>
                              </tr>
                             <tr>
                                 <th>Origem:</th>
@@ -79,7 +80,7 @@
                 <form>
                         <p> 
                             Trata-se de solicitação de LICENÇA PARA CAPACITAÇÃO do(a) servidor(a) Requerente <span contenteditable="true"
-                        class="campo-inline"></span>, ocupante do cargo <span contenteditable="true" class="campo-inline"></span>, 
+                        class="campo-inline" id="requerente2"></span>, ocupante do cargo <span contenteditable="true" class="campo-inline" id="cargo"></span>, 
                          o (a) qual requer a utilização da referida licença para a elaboração de: 
                           <select name="trabalho">
                             <option>monografia</option>
@@ -88,7 +89,7 @@
                             <option>tese de doutorado</option>
                             <option>livre-docência</option>
                             <option>estágio pós-doutoral</option>
-                          </select>, para o período de <input type="number" class="input-numero"> dias, e carga horária mínima semanal de 
+                          </select>, para o período de <input type="number" class="input-numero" id="dias"> dias, e carga horária mínima semanal de 
                           <span class="destaque">30 horas.</span>
                         </p>
                         <p>
@@ -326,7 +327,7 @@
                          Neste sentido, considerando a concordância da Chefia Imediata e da Direção-Geral do Campus (ou Pró-Reitoria) 
                          com a proposta de licença capacitação apresentada pelo(a) servidor(a) interessado(a), esta Diretoria de Gestão de 
                         Pessoas é favorável à concessão da Licença para Capacitação ao (à) servidor (a) <span contenteditable="true" 
-                        class="campo-inline"></span>, ocupante do cargo de <span contenteditable="true" class="campo-inline"></span>, 
+                        class="campo-inline" id="requerente3"></span>, ocupante do cargo de <span contenteditable="true" class="campo-inline" id="cargo2"></span>, 
                         Matrícula SIAPE nº <input type="text" size="7" maxlength="7"> lotado no(a) 
                           <select name="lotacao">
                             <option>Campus Abelardo Luz</option>
@@ -355,7 +356,7 @@
                            da pela Lei nº 9.527, de 10 de dezembro de 1997, e na Nota técnica  SEI nº 43661/2022/ME, combinados com o art. 25 da 
                               Lei nº 9.527, de 10 de dezembro de 1997, com nova redação dada pelo Decreto nº 10.506, de 2 de outubro de 
                               2020, referente ao quinquênio compreendido entre  <input type="date"  value="--/--/----"> a 
-                             <input type="date"  value="--/--/----">, pelo prazo <input type="number" class="input-numero"> dias,  
+                             <input type="date"  value="--/--/----">, pelo prazo <input type="number" class="input-numero" id="dias2"> dias,  
                              de <input type="date" value="--/--/----"> a <input type="date" value="--/--/----">. 
                             A licença Capacitação foi concedida para Elaboração de <select name="trabalho">
                             <option>monografia</option>
