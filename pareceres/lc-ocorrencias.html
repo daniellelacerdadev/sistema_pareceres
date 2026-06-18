@@ -58,7 +58,7 @@
                             <tr>
                                 <th>Requerente:</th>
        
-                                <td><input type="text" placeholder="Digite o nome do servidor requerente" width="100%"></td>
+                                <td><input type="text" placeholder="Digite o nome do servidor requerente" width="100%" id="requerente"></td>
                              </tr>
                             <tr>
                                 <th>Origem:</th>
@@ -79,10 +79,10 @@
                 <form>
                         <p> 
                             Trata-se de solicitação de LICENÇA PARA CAPACITAÇÃO do(a) servidor(a) Requerente <span contenteditable="true"
-                        class="campo-inline"></span>, ocupante do cargo <span contenteditable="true" class="campo-inline"></span>, 
+                        class="campo-inline" id="requerente2"></span>, ocupante do cargo <span contenteditable="true" class="campo-inline" id="cargo"></span>, 
                          o (a) qual requer a utilização da referida licença para a realização das seguintes atividades: <span contenteditable="true" 
-                         class="campo-grande"> </span> com carga horária total de <input type="text" size="5"> horas,
-                          para o período de <input type="number" class="input-numero"> dias.
+                         class="campo-grande"> </span> com carga horária total de <input type="text" size="5" id="cargatotal" oninput="calcularCargaHoraria()">
+                          horas, o período de <input type="number" class="input-numero" id="dias" oninput="calcularCargaHoraria()"> dias.
                         </p>
                         <p>
                          A Licença para Capacitação está prevista no Art. 87 da Lei no 8.112/1990, in verbis:
@@ -205,8 +205,8 @@
 
                 <p>
                             Ao verificarmos o plano de curso encaminhado pelo servidor para o período proposto, vemos que a carga horária total 
-                         de <input type="number" id="cargatotal" oninput="calcularCargaHoraria()"> horas dividida por <input type="number" id="dias" oninput="calcularCargaHoraria()"> dias de licença e multiplicada por 07 
-                        dias semanais ( <input type="number" id="cargatotal" oninput="calcularCargaHoraria()"> ÷ <input type="number" id="dias" oninput="calcularCargaHoraria()"> × 7), culminou no seguinte 
+                         de <input type="number" id="cargatotal2"> horas dividida por <input type="number" id="dias2"> dias de licença e multiplicada por 07 
+                        dias semanais ( <input type="number" id="cargatotal3"> ÷ <input type="number" id="dias3"> × 7), culminou no seguinte 
                         resultado: <input type="text" id="cargasem" oninput="calcularCargaHoraria()">horas semanais, atendendo ao disposto na <strong>Nota Técnica SEI nº 7737/2020/ME e 
                         no art. 26 do Decreto nº 9.991/2019, quanto à carga horária mínima prevista para as ações de capacitação.</strong>
                         </p>
@@ -467,7 +467,7 @@
                              Neste sentido, considerando a concordância da Chefia Imediata e da Direção-Geral do Campus (ou Pró-Reitoria) 
                          com a proposta de licença capacitação apresentada pelo(a) servidor(a) interessado(a), esta Diretoria de Gestão de 
                         Pessoas é favorável à concessão da Licença para Capacitação ao (à) servidor (a) <span contenteditable="true" 
-                        class="campo-inline"></span>, ocupante do cargo de <span contenteditable="true" class="campo-inline"></span>, Matrícula SIAPE nº 
+                        class="campo-inline" id="requerente3"></span>, ocupante do cargo de <span contenteditable="true" class="campo-inline" id="cargo2"></span>, Matrícula SIAPE nº 
                           <input type="text" size="7" maxlength="7"> lotado no(a) 
                           <select name="lotacao">
                             <option>Campus Abelardo Luz</option>
