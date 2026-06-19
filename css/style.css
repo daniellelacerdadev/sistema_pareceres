@@ -298,11 +298,11 @@ select {
   
 }
 
-#short input {
+#short  input {
   font-size: 16px;
 }
 
-#short .campo-inline {
+#short  .campo-inline {
   display: inline-block;
   text-align: center;
   min-width: 80px;
@@ -759,7 +759,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 @media print {
-  #short rodape {
+  #short .rodape {
     bottom: 0;
 
     width: 100%;
