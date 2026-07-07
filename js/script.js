@@ -335,6 +335,8 @@ sincronizarSpan("orgao", "orgao2");
 sincronizarSpan("nomeServidor", "nomeServidor2");
 sincronizarSpan("cargo", "cargo2");
 sincronizarSpan("nomeMae", "nomeMae2");
+sincronizarSpan("programa", "programa2")
+sincronizarSpan("instituicao", "instituicao2")
 
 
 
