@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="../../css/geral.css">
+    <link rel="stylesheet" type="text/css" href="../../css/documentos.css">
+    <link rel="stylesheet" type="text/css" href="../../css/menu.css">
+
+    <title>Afastamento Integral - Interrupção</title>
+</head>
+<body id="parecer"
+         data-inicio="../../index.html"
+         data-menu="Afastamento Integral"
+         data-parecer="Para interrupção de afastamento integral"
+         data-link-menu="../../menu/afastintegral.html">
+
+     <header class="cabecalho">
+
+            <div class="logo">
+                <img src="../../img/logo_gov.png" width="400"  alt="Logo do governo e dados do órgão de emissão">
+             </div>
+
+           <nav id="breadcrumb" class="breadcrumb">
+
+                <a href="../../index.html">Início</a>
+
+                <span>></span>
+
+                <a href="../../menu/afastintegral.html">Afastamento Integral</a>
+
+                <span>></span>
+
+                <span id="breadcrumb-atual">Interrupção de Afastamento Integral</span>
+    
+            </nav>
+        </header>
+
+        <section class="tramitacao">
+            <div class="corpo-parecer">
+                <h4>PARECER DE INTERRUPÇÃO DE AFASTAMENTO INTEGRAL</h4>
+                <form action="" id="requerimento">
+
+                    <table class="tabela">                  
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="titulo">Tramitação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Número do Processo:</th>
+                                <td><input type="text" placeholder="Digite o número do processo" width="100%">  </td>
+                            </tr>
+                            <tr>
+                                <th>Assunto:</th>
+                                <td>Interrupção de Afastamento Integral</td>
+                            </tr>
+                            <tr>
+                                <th>Requerente:</th>
+       
+                                <td><input type="text" placeholder="Digite o nome do servidor requerente" width="100%" id="requerente"></td>
+                             </tr>
+                            <tr>
+                                <th>Origem:</th>
+                                <td>CCAA/CGPCAP/DGP/PROPESSOAS/REITORIA/IFC</td>
+                            </tr>
+                            <tr>
+                                <th>Data da tramitação:</th>
+                                <td><input  type="text" id="data-emissao"  width="100%" align-self-center>  </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </section>
+        <section class="texto">
+            <div class="container">
+                <form>
+                    
+                    <p>
+                       Trata-se de Interrupção do Afastamento Integral para participação em programa de
+                        <span contenteditable="true" id="programa" class="campo-inline"></span>, junto à <span contenteditable="true"
+                       id="instituicao" class="campo-inline"></span>, do(a) servidor(a) <span contenteditable="true" class="campo-inline" id="requerente2"></span>, 
+                        ocupante do Cargo de <span contenteditable="true" class="campo-inline"></span>, lotado no(a) 
+                        <select name="lotacao">
+                            <option>Campus Abelardo Luz</option>
+                            <option>Campus Araquari</option>
+                            <option>Campus Blumenau</option>
+                            <option>Campus Brusque</option>
+                            <option>Campus Camboriú</option>
+                            <option>Campus Concórdia</option>
+                            <option>Campus Fraiburgo</option>
+                            <option>Campus Ibirama</option>
+                            <option>Campus Luzerna</option>
+                            <option>Campus Rio do Sul</option>
+                            <option>Campus Santa Rosa do Sul</option>
+                            <option>Campus São Bento do Sul</option>
+                            <option>Campus São Francisco do Sul</option>
+                            <option>Campus Sombrio</option>
+                            <option>Campus Videira</option>
+                            <option>Reitoria Administrativa</option>
+                          </select>,  Matrícula SIAPE sob o nº <input type="text" size="7" maxlength="7">.
+                    </p>
+                    <p>
+                        A autorização para o Afastamento Integral para participar de programa de Pós-Graduação stricto sensu - <select name="programa">
+                            <option>Mestrado</option>
+                            <option>Doutorado</option>
+                            <option>Pós-Doutorado</option>
+                        </select>  do (a) servidor (a) Requerente deu-se através da PORTARIA Nº <input type="text" 
+                    size="9" maxlength="9" id="portaria">, de  <input type="text" placeholder="dd/mm/aaaa" class="campo-data" id="data-portaria">.
+                    </p>
+
+                    <p>
+                        Conforme documentação anexada ao presente processo, o (a) servidor (a) interessado (a) apresentou formulário de interrupção de seu afastamento integral em decorrência de 
+                        <select name="motivo">
+                          <option value="motivo">Licença para tratamento de saúde</option>
+                          <option value="motivo">Licença por motivo de doença de familiar</option>
+                          <option value="motivo">Licença Gestante</option>
+                          <option value="motivo">Licença Adotante</option></select>
+                           bem como anexou ao formulário a Declaração fornecida pelo seu orientador, na qual consta a informação de que o (a) servidor (a) requerente teve as suas atividades suspensas na instituição de ensino onde cursa o programa.
+                    </p>
+
+                    <p>
+                     Da mesma forma, foram anexados ao presente processo o <input type="radio" value="laudo"> Laudo Médico Pericial nº <input type="text" 
+                    size="11" maxlength="11"> - fornecido pelo Subsistema Integrado de Atenção à Saúde do Servidor do IFC - ou <input type="radio" value="portaria"> Portaria nº<input type="text" 
+                    size="9" maxlength="9">, de  <input type="text" placeholder="dd/mm/aaaa" class="campo-data">, no qual consta a concessão de <select name="motivo">
+                          <option value="motivo">Licença para tratamento de saúde</option>
+                          <option value="motivo">Licença por motivo de doença de familiar</option>
+                          <option value="motivo">Licença Gestante</option>
+                          <option value="motivo">Licença Adotante</option></select> ao servidor requerente no período de <input type="text" placeholder="dd/mm/aaaa" class="campo-data"> a 
+                           <input type="text" placeholder="dd/mm/aaaa" class="campo-data"> (<span contenteditable="true" class="campo-inline"></span>).
+                    </p>
+
+                    <p>
+                      A Resolução nº 35/2025-CONSUPER, de 22/12/2025, a qual dispõe sobre Normas de afastamento para ações de capacitação e para licença capacitação dos servidores do IFC, estabelece:
+                    </p>
+
+                        <blockquote>
+                            <p><strong> Art. 17 </strong> Os afastamentos para a realização de programas de pós-graduação stricto sensu somente serão concedidos aos servidores titulares de cargos efetivos no Instituto Federal Catarinense há pelo menos 03 (três) anos, para Mestrado, e 04 (quatro) anos para Doutorado, incluído o período de estágio probatório, que não tenham se afastado por licença para tratar de assuntos particulares e/ou para gozo de licença para capacitação, ambos nos 02 (dois) anos anteriores à data de protocolo do requerimento do afastamento integral, considerando-se a data de retorno do último período de gozo das licenças de que trata este artigo e os demais requisitos previstos nesta resolução e no edital do processo seletivo.
+                            </p>
+
+                            <p>
+                                <strong>§ 1º </strong> Não se aplica ao ocupante de cargos do Plano de Carreiras e Cargos do Magistério 
+                                Federal a exigência de 03 (três) anos de exercício em cargo efetivo para Mestrado e 04 (quatro) anos
+                                 para Doutorado, podendo o docente afastar-se de suas funções, assegurados todos os direitos e vantagens 
+                                 a que fizer jus, para participar de programas de Mestrado e Doutorado, por período proporcional ao tempo 
+                                 de exercício na instituição, sendo necessário o período mínimo de 12 (doze) meses de exercício prévio 
+                                 para afastamento pelo mesmo período.
+                            </p>
+                            <p>
+                                <strong>§ 2º </strong> Na possibilidade de o servidor docente afastar-se integralmente pelo período 
+                                proporcional ao tempo de exercício no IFC, não será possível solicitar a prorrogação do afastamento 
+                                integral, devendo aquele permanecer no exercício das atribuições de seu cargo efetivo pelo mesmo período 
+                                de afastamento.
+                            </p>
+                                [...]
+                        </blockquote>
+
+                        <blockquote>
+                            <p>
+                              <strong>Art. 21. </strong> O afastamento do servidor para pós-graduação stricto sensu no país e/ou no exterior será concedido em tempo integral de acordo com a natureza do curso, respeitados os limites máximos de:
+                            <p/>
+                                  <ol class="lista-romana">
+                                    <li>Mestrado - até 24 (vinte e quatro) meses;</li>
+                                    <li>Doutorado - até 48 (quarenta e oito) meses;</li>
+                                    <li> Pós-Doutorado - até 12 (doze) meses.</li>
+                                  </ol>
+                        </blockquote>
+                        <blockquote>
+                          <p> 
+                            <strong> Art. 25. </strong> O servidor beneficiado pelo afastamento previsto de que trata este capítulo deverá permanecer no exercício de suas funções após o seu retorno por um período igual ao do afastamento concedido, não podendo solicitar vacância de cargo, exoneração de cargo, licença para tratar de interesses particulares, aposentadoria antes de decorrido período igual ao do afastamento.
+                          </p>
+                          <p>
+                            <strong> § 1º</strong> Caso o servidor venha a solicitar vacância de cargo, exoneração de cargo, licença para tratar de interesses particulares, aposentadoria antes de cumprido o período de permanência previsto no caput do artigo, deverá ressarcir ao erário, na forma da legislação vigente, os gastos com seu aperfeiçoamento, integralmente ou valor correspondente à parcela não cumprida do período de permanência.
+                          </p>
+                          <p>
+                            <strong> § 2º</strong> Nos casos de aposentadoria por invalidez, o servidor fica desobrigado a ressarcir ao IFC os gastos com seu aperfeiçoamento.
+                          </p>
+                          <p>
+                            <strong> Art. 26. </strong> Os períodos usufruídos pelos servidores na carreira docente para afastamento de que trata este capítulo serão descontados para fins de aposentadoria diferenciada de professor.
+                          </p>
+                          [...]
+                          <p>
+                            <strong> Art. 30.</strong>  Ao retornar do afastamento, espontaneamente, por avaliação desfavorável, por desistência, por conclusão antes do previsto ou expirado o prazo concedido ou por convocação da Administração, o servidor deverá reassumir suas atividades imediatamente na instituição.
+                          </p>
+                          <p>
+                            <strong> § 1º</strong> No caso de a conclusão da pós-graduação stricto sensu ocorrer antes do término do período de afastamento, o servidor deverá retornar às suas atividades imediatamente, solicitando à DGP o encerramento antecipado da sua portaria de afastamento mediante o preenchimento de formulário específico disponível no Manual do Servidor do IFC.
+                          </p>
+                          <p>
+                            <strong> § 2º</strong> Nos casos em que a banca avaliadora do curso de pós-graduação stricto sensu sugerir adequações/ressalvas da dissertação ou tese, o servidor afastado poderá utilizar o período de afastamento para concluir o trabalho, de acordo com o prazo estabelecido em ata de defesa, devendo, nesse caso, entregar uma cópia da ata de defesa para ser anexada ao processo de Afastamento Integral. Este caso prevê a utilização do período já concedido ou o pedido de prorrogação do afastamento considerando o prazo máximo.
+                          </p>
+                        </blockquote>
+                        <blockquote>
+                          <p>
+                            <strong> Art. 31.</strong> A comprovação da obtenção do título deverá ser efetuada em até 90 dias após o término do afastamento, com a apresentação do Diploma ou Declaração emitida pela instituição, com a informação de que foram atendidos todos os requisitos para obtenção do título, restando somente a confecção do Diploma.
+                          </p>
+                          <p>
+                            <strong> § 1º</strong> Ao final do curso, o servidor deverá apresentar, de forma digital, a dissertação de mestrado, tese de doutorado ou relatório de pós-doutorado ao Sistema Integrado de Bibliotecas - SIBI do IFC, a fim de que o trabalho seja disponibilizado à comunidade acadêmica e à sociedade, salvo impedimento legal.
+                          </p>
+                          <p>
+                            <strong> Art. 32.</strong> No caso de conclusão de pós-graduação stricto sensu, constitui responsabilidade do servidor solicitar a progressão por titulação e/ou retribuição por titulação, no caso de professor, e o incentivo à qualificação, no caso de técnico administrativo.
+                          </p>
+                          [...]
+                          <p>
+                            <strong> Art. 34.</strong> Caso o servidor não obtenha o título ou grau que justificou seu afastamento no período previsto, deverá indenizara instituição nos termos dos arts. 46 e 47 da Lei nº 8.112/1.990, restituindo-a pelas despesas que teve com o afastamento integral, proporcional ao período não trabalhado, salvo na hipótese comprovada de força maior, de caso fortuito ou casos omissos a esta resolução, que serão apreciadas pelo Cogepe.
+                          </p>
+                          <p>
+                            <strong> § 1º</strong> Os conceitos de força maior e caso fortuito deverão ser fundamentados de acordo com o art. 393, parágrafo único, do Código Civil Brasileiro.
+                          </p>
+                          [...]
+                          <p>
+                            <strong> Art. 36.</strong> Aplica-se à participação em programa de pós-graduação no exterior, autorizado nos termos da legislação vigente, o disposto nesta Normativa.
+                          </p>
+                          (...)
+                          <p>
+                            <strong> § 3º</strong> Os servidores beneficiados com o afastamento integral para pós-graduação stricto sensu no exterior deverão apresentar, no prazo máximo de 36 (trinta e seis) meses do fim do afastamento, comprovação de reconhecimento do curso por universidade brasileira que possua curso de pós-graduação avaliado e reconhecido pela Capes, de mesma área do conhecimento e em nível de titulação equivalente ou superior àquela obtida conforme legislação vigente, podendo este prazo ser prorrogado a pedido da universidade reconhecedora.
+                          </p>
+                          <p>
+                            <strong> § 4º</strong> O processo de reconhecimento do curso por universidade brasileira é de responsabilidade exclusiva do servidor beneficiado com o afastamento.
+                          </p>
+                          <p>
+                            <strong> § 5º</strong> Caso o servidor não obtenha o reconhecimento do curso no prazo previsto no § 1º, deverá ressarcir ao IFC, na formada legislação vigente, os gastos com seu aperfeiçoamento.
+                          </p>
+                          [...]
+                        </blockquote>
+                        <blockquote>
+                          <p>
+                            <strong> Art. 49. O afastamento integral para pós-graduação stricto sensu somente poderá ser suspenso em decorrência de:</strong>
+                          </p>
+                            <strong>  <ol class="lista-romana">
+                                <li>Licença para tratamento de saúde (período igual ou superior a 30 dias); </li>
+                                <li>Licença por motivo de doença em pessoa da família (período igual ou superior a 30 dias); </li>
+                                <li>Licença Gestante e sua prorrogação (120 + 60 dias);</li>
+                                <li> Licença Adotante e sua prorrogação (120 + 60 dias);</li>
+                                <li>A pedido do servidor; e </li>
+                                <li>Interesse da administração.</li>
+                              </ol>
+                            <p> 
+                              § 1º O servidor que se encontrar em licença para tratamento da própria saúde e licença por motivo de doença em pessoa da família, nos termos deste artigo, e que não tiver interrompida sua participação no programa de pós-graduação stricto sensu pela instituição de ensino não fará jus à suspensão do afastamento integral.
+                            </p> 
+                            [...]
+                            <p>
+                              Art. 50. Para solicitar a interrupção do afastamento integral, o servidor em licença para tratamento de saúde deverá passar por avaliação pela perícia médica oficial do IFC, bem como anexar ao formulário de solicitação de interrupção um documento, fornecido pelo programa de pós-graduação da instituição de ensino na qual realiza o seu curso, que ateste que o servidor deverá permanecer afastado das atividades relacionadas ao seu curso (ou pós-doutorado).
+                            </p></strong>
+                            [...]
+                        </blockquote>
+                        <blockquote>
+                          <p>
+                            <strong> Art. 96</strong> Art. 96. As situações não previstas na presente normativa serão discutidas e definidas pela Diretoria de Gestão de Pessoas, para posterior encaminhamento ao Colegiado de Gestão de Pessoas - Cogepe.
+                          </p>
+                          (Grifo nosso)
+                        </blockquote>
+
+                    <p>
+                       Diante do exposto, observadas as garantias constitucionais e com fundamento na legislação vigente e na Resolução nº 35/2025-CONSUPER, de 22/12/2025 e, considerando a concessão da Licença <select name="motivo">
+                          <option value="motivo">Licença para tratamento de saúde</option>
+                          <option value="motivo">Licença por motivo de doença de familiar</option>
+                          <option value="motivo">Licença Gestante</option>
+                          <option value="motivo">Licença Adotante</option></select> ao (à) servidor (a) Requerente no período de <input type="text" placeholder="dd/mm/aaaa" class="campo-data"> a 
+                           <input type="text" placeholder="dd/mm/aaaa" class="campo-data"> (<span contenteditable="true" class="campo-inline"></span>), esta Diretoria de Gestão de Pessoas manifesta-se favoravelmente pela Interrupção do Afastamento Integral para participação em programa de Pós-Graduação Stricto Sensu <select name="programa">
+                            <option>Mestrado</option>
+                            <option>Doutorado</option>
+                            <option>Pós-Doutorado</option>
+                        </select>  a partir de <input type="text" placeholder="dd/mm/aaaa" class="campo-data">.
+                    </p>
+
+                    <p>
+                       Da mesma forma, fica estabelecido o retorno da servidora Requerente ao Afastamento Integral para participar de Programa de <span contenteditable="true" id="programa2" class="campo-inline"></span>, junto à <span contenteditable="true"
+                       id="instituicao2" class="campo-inline"></span>, a partir de <input type="text" placeholder="dd/mm/aaaa" class="campo-data"> e seu término em <input type="text" placeholder="dd/mm/aaaa" class="campo-data">, considerando o período anteriormente concedido por meio da Portaria nº <input type="text" 
+                    size="9" maxlength="9" id="portaria2">, de  <input type="text" placeholder="dd/mm/aaaa" class="campo-data" id="data-portaria2">, bem como o limite máximo fixado em lei e nos incisos do art. 21 da Resolução nº 35/2025-CONSUPER, de 22/12/2025.
+                    </p>
+                       
+                    <p>
+                      Salienta-se que o(a) servidor(a) interessado(a) deverá apresentar a comprovação da participação no programa de pós-graduação a cada trimestre ou semestre através do atestado de matrícula, bem como, apresentar ao final do curso, a comprovação de obtenção do título que justificou o afastamento. Caso o(a) servidor(a) não obtenha o título (mestrado ou doutorado) ou o certificado (pós-doutorado) que justificou seu afastamento no período previsto, deverá ressarcir o Instituto Federal Catarinense, na forma estabelecida no art. 47 da Lei nº 8.112/90 e disciplinado pelo art. 34 da RESOLUÇÃO Nº 35/2025 - CONSUPER (11.01.18.67), de 22/12/2025, do gasto referente ao período do afastamento, salvo na hipótese comprovada de força maior ou de caso fortuito, apurada pelo Cogepe da Reitoria/IFC.
+                    </p>
+                    <p>
+                      É o entendimento.
+                    </p>
+                    <p>
+                      À apreciação da Diretoria de Gestão de Pessoas e Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência
+                       à Pessoa, para ciência e assinaturas.
+                    </p>
+                    <p>
+                    Após, encaminhe-se ao(à) servidor(a) interessado(a) para ciência e, posteriormente tramite-se ao Setor de Portarias da Reitoria para a emissão da respectiva portaria. Por fim, tramite-se à Coordenação de Concessões, Aposentadorias e 
+                    Ações Judiciais (11.01.18.55).
+                    </p>
+
+
+                    <button class="button-pdf"  onclick= "gerarPDF()">
+                         Gerar PDF
+                        </button>
+                </form>
+            </div>
+        </section>
+      
+
+        <footer class="rodape">
+
+          <img src="../../img/logo_ifc.png" class="logoifc"  alt="Logo IFC">
+
+          <div class="endereco">  
+
+           <img src="../../img/end_rodape.png"  alt="Endereço da Reitoria IFC">
+
+       </footer>
+
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../../js/menu.js" defer></script>
+    <script src="../../js/pareceres.js" defer></script>
+</body>
+</html>

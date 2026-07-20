@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="../../css/geral.css">
+    <link rel="stylesheet" type="text/css" href="../../css/documentos.css">
+    <link rel="stylesheet" type="text/css" href="../../css/menu.css">
+
+    <title>Parecer Licença Capacitação</title>
+ </head>
+ <body id="parecer"
+         data-inicio="../../index.html"
+         data-menu="Licença Capacitação"
+         data-parecer="Para ações de desenvolvimento"
+         data-link-menu="../../menu/licencacapacitacao.html">
+
+         <header class="cabecalho">
+
+            <div class="logo">
+                <img src="../../img/logo_gov.png" width="400"  alt="Logo do governo e dados do órgão de emissão">
+             </div>
+
+             <nav id="breadcrumb" class="breadcrumb">
+
+                <a href="../../index.html">Início</a>
+
+                <span>></span>
+
+                <a href="../../menu/licencacapacitacao.html">Licença Capacitação</a>
+
+                <span>></span>
+
+                <span id="breadcrumb-atual">Para ações de desenvolvimento</span>
+    
+            </nav>
+        </header>
+
+        <section class="tramitacao">
+            <div class="corpo-parecer">
+                <h4>PARECER DE LICENÇA CAPACITAÇÃO</h4>
+                <form action="" id="requerimento">
+
+                    <table class="tabela">                  
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="titulo">Tramitação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Número do Processo:</th>
+                                <td><input type="text" placeholder="Digite o número do processo" width="100%">  </td>
+                            </tr>
+                            <tr>
+                                <th>Assunto:</th>
+                                <td>Licença para Capacitação</td>
+                            </tr>
+                            <tr>
+                                <th>Requerente:</th>
+       
+                                <td><input type="text" placeholder="Digite o nome do servidor requerente" id="requerente"  width="100%"></td>
+                             </tr>
+                            <tr>
+                                <th>Origem:</th>
+                                <td>CCAA/CGPCAP/DGP/PROPESSOAS/REITORIA/IFC</td>
+                            </tr>
+                            <tr>
+                                <th>Data da tramitação:</th>
+                                <td><input  type="text" id="data-emissao" width="100%" align-self-center>  </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </section>
+
+        <section class="texto">
+            <div class="corpo-parecer">
+                <form>
+                        <p> 
+                            Trata-se de solicitação de LICENÇA PARA CAPACITAÇÃO do(a) servidor(a) Requerente <span contenteditable="true"
+                        class="campo-inline" id="requerente2"></span>, ocupante do cargo <span contenteditable="true" class="campo-inline" id="cargo"></span>, 
+                         o (a) qual requer a utilização da referida licença para a realização das seguintes atividades: <span contenteditable="true" 
+                         class="campo-grande"> </span> com carga horária total de <input type="text" size="5" id="cargatotal" oninput="calcularCargaHoraria()"> horas,
+                          para o período de <input type="number" class="input-numero" id="dias" oninput="calcularCargaHoraria()"> dias.
+                        </p>
+                        <p>
+                         A Licença para Capacitação está prevista no Art. 87 da Lei no 8.112/1990, in verbis:
+                        </p>
+                    <blockquote cite="Lei Nº 8.112/90, Art. 87">
+                        <strong>Art. 87.</strong> Após cada quinquênio de efetivo exercício, o servidor poderá, no interesse da 
+                    Administração, afastar-se do exercício do cargo efetivo, com a respectiva remuneração, por até três meses, 
+                    para participar de curso de capacitação profissional. (Redação dada pela Lei no 9.527, de 10.12.97).
+                    Parágrafo único. Os períodos de licença de que trata o caput não são acumuláveis.
+                    (Redação dada pela Lei no 9.527, de 10.12.97)
+                    </blockquote>
+
+                        <p>
+                               O Decreto no 9.991/2019, e atualização com o Decreto nº 10.506/2020, que regulamenta dispositivos da Lei 
+                               no 8.112/1990, quanto a licenças e afastamentos para ações de desenvolvimento, estabelece que:
+                        </p>
+
+                    <blockquote cite="Decreto nº 9.991/19">
+                        <p> 
+                        <strong>Art. 18.</strong> Considera-se afastamento para participação em ações de desenvolvimento a: 
+                        </p>
+                        <ol class="lista-romana">
+                            <li>licença para capacitação, nos termos do disposto no art. 87 da Lei no 8.112, de 11 de dezembro de 1990;</li>
+                        </ol>
+                        [...]
+                        <p>
+                        <strong>§ 1º </strong> Nos afastamentos por período superior a trinta dias consecutivos, o servidor:
+                        </p>
+                        <p>
+                             I - requererá, conforme o caso, a exoneração ou a dispensa do cargo em comissão ou função de confiança eventualmente 
+                            ocupado, a contar da data de início do afastamento; e
+                        </p>
+                        <p>
+                             II – não fará jus às gratificações e adicionais vinculados à atividade ou ao local de trabalho e que não façam parte 
+                    da estrutura remuneratória básica do seu cargo efetivo.
+                        </p>
+                        <p>
+                            II - terá suspenso, sem implicar na dispensa da concessão, o pagamento das parcelas referentes às gratificações e 
+                            aos adicionais vinculados à atividade ou ao local de trabalho e que não façam parte da estrutura remuneratória básica 
+                            do seu cargo efetivo, contado da data de início do afastamento.(atualizado pelo Decreto nº 10.506/20)
+                        </p>
+                            [...] 
+                    </blockquote>
+                
+                    <blockquote>
+
+                        <p>
+                        <strong>Art. 19.</strong> Os afastamentos de que trata o art. 18 poderão ser concedidos, entre outros critérios,
+                         quando a ação de desenvolvimento:
+                        </p>
+                        <p>
+                         I - estiver prevista no PDP do órgão ou da entidade do servidor;
+                        </p>
+                        <p>
+                         II - estiver alinhada ao desenvolvimento do servidor nas competências relativas: ao seu órgão de exercício ou de 
+                         lotação;
+                        </p>
+                             (...)
+                        <p>
+                             b) à sua carreira ou cargo efetivo; ou 
+                        </p>
+                        <p>
+                            c) ao seu cargo em comissão ou à sua função de confiança; e
+                        </p>
+                            [...]
+                        <p>
+                        <strong>Art. 29.</strong> O servidor poderá se ausentar das atividades no órgão ou na entidade de exercício somente 
+                    após a publicação do ato de concessão da licença para capacitação.
+                    Parágrafo único.  O prazo para a decisão sobre o pedido e a publicação do eventual deferimento é de trinta dias, 
+                    contado da data de apresentação dos documentos necessários.  
+                         </p>
+                             (Original sem grifos)
+                    </blockquote>
+
+                         <p>
+                         Com relação às ações de capacitação e à carga horária prevista, o Decreto no 9.991/2019 elencou os seguintes critérios:
+                        </p>
+
+                    <blockquote>
+                    
+                        <p>
+                        <strong>Art.25.</strong> A licença para capacitação poderá ser concedida para:
+                        </p>
+                        <p>
+                        I - ações de desenvolvimento presenciais ou à distância;
+                        </p>
+                        <p>
+                          II - elaboração de monografia, trabalho de conclusão de curso, dissertação de mestrado, 
+                         tese de doutorado, de livre-docência ou estágio pós-doutoral; ou
+                        <p>
+                        <p>
+                            <strike>  III - participação em curso presencial ou intercâmbio para aprendizado de língua estrangeira, quando 
+                             recomendável ao exercício de suas atividades, conforme atestado pela chefia imediata; 
+                            ou </strike> <span>(Revogado pelo Decreto nº 10.506/2020)</span>
+                        </p>
+                        <p>
+                           IV - curso conjugado com:
+                        </p>
+                        <p>
+                         a) atividades práticas em posto de trabalho, em órgão ou entidade da administração pública direta ou indireta 
+                          dos entes federativos, dos Poderes da União ou de outros países ou em organismos internacionais; ou
+                        </p>
+                        <p>
+                         b) realização de atividade voluntária em entidade que preste serviços dessa natureza no País.  
+                        </p>
+                        <p>
+                         <strong>§ 1º </strong> As ações de desenvolvimento de que trata o inciso I do
+                         caput poderão ser organizadas de modo individual ou coletivo.
+                        </p>
+                        <p>
+                        <strong>§ 2º </strong>Os órgãos e as entidades poderão definir critérios de concessão da licença para capacitação de que 
+                        trata a alínea “b” do inciso IV do caput, observado o disposto no Decreto no 9.906, de 9 de julho de 2019, 
+                        e as condições para a concessão de afastamento estabelecidas no art. 19.
+                        </p>
+                        <p>
+                        <strong>§ 3º </strong>  A licença para capacitação poderá ser parcelada em, 
+                        no máximo, seis períodos e o menor período não poderá ser inferior a quinze dias.
+                        </p>
+                        <p>
+                        <strong>§ 4º </strong>Na hipótese de necessidade de prorrogação dos prazos de afastamento de que tratam os 
+                        incisos I e II do caput do art. 21, o servidor poderá utilizar a licença para capacitação.
+                        </p>
+                        <p>
+                        <strong>§ 5º  A ação de desenvolvimento para aprendizado de língua estrangeira somente poderá ocorrer de modo presencial, 
+                        no País ou no exterior, e quando recomendável ao exercício das atividades do servidor, conforme atestado no âmbito do 
+                        órgão ou da entidade. <span>(Incluído pelo Decreto nº 10.506, de 2020).</span></strong>
+                        <p>
+                        <p>
+                      <strong> Art. 26. </strong> O órgão ou a entidade poderá conceder licença para capacitação somente quando a carga 
+                      horária total da ação de desenvolvimento ou do conjunto de ações seja superior a trinta horas semanais.
+                        </p>
+
+                         (Grifo nosso)
+
+                    </blockquote>
+
+                        <p>
+                            Ao verificarmos o plano de curso encaminhado pelo servidor para o período proposto, vemos que a carga horária total 
+                         de <span id="cargatotal2" class="campo-inline"></span> horas dividida por <span id="dias2" class="campo-inline"></span> dias de licença e multiplicada por 07 dias 
+                         semanais ( <span id="cargatotal3" class="campo-inline"></span> ÷ <span id="dias3" class="campo-inline"></span> × 7), culminou no seguinte resultado: 
+                         <input type="text" id="cargasem" oninput="calcularCargaHoraria()">horas semanais, atendendo ao disposto na <strong>
+                            Nota Técnica SEI nº 7737/2020/ME e no art. 26 do Decreto nº 9.991/2019, quanto à carga horária mínima prevista para as ações de capacitação.</strong>
+                        </p>
+                        <p>
+                              Nesse sentido, ao término da licença, o(a) servidor(a) interessado(a) deverá apresentar, no prazo máximo 
+                              de 30 dias corridos, o(s) documento(s) comprobatório(s) de sua participação e conclusão na referida ação 
+                              de capacitação.
+                        </p>
+                        <p>
+                            Os certificados deverão comprovar, por meio das datas de início e término dos cursos, que a ação de capacitação 
+                            ocorreu ao longo de todo o período concedido para a licença capacitação. Cada certificado apresentado deverá conter, 
+                            no mínimo, o nome completo do servidor, a data de início e término das ações de capacitação e a carga horária do curso.
+                        </p>
+                        <p>
+                             Como exemplo, se a licença capacitação foi concedida para o período (hipotético) de 30/11 a 29/12 (30 dias), 
+                             o servidor deverá comprovar a utilização de todo o período para a realização das ações de capacitação. Se o 
+                             servidor realizar mais de um curso para comprovar a carga horária mínima necessária, os diferentes 
+                             certificados deverão comprovar a realização dos cursos contemplando todo o período de licença capacitação.
+                        </p>
+                        <p>
+                            Exemplo: licença capacitação concedida de 30/11 a 29/12 (30 dias), com ações de capacitação
+                            somando 130 horas:
+                        </p>
+                            <ul>
+                                <li>Curso A: de 30/11 a 10/12 (40 horas)</li>
+                                <li>Curso B: de 11/12 a 20/12 (60 horas)</li>
+                                <li>Curso C: de 21/12 a 29/12 (30 horas).</li>
+                            </ul>
+                        <p>
+                         Ademais, a Resolução no 35 – CONSUPER/2025, em consonância com a legislação e as normativas vigentes, define os 
+                        critérios e as orientações para o gozo da Licença para Capacitação dos servidores efetivos do Instituto Federal 
+                        Catarinense, conforme demonstrado a seguir:
+                        </p>
+                    <blockquote>
+                        <p>
+                        <strong>Art. 61. </strong> A licença para capacitação poderá ser parcelada conforme períodos disponibilizados 
+                        para reserva de vagas e de acordo com a legislação vigente.
+                        </p>
+                            [...]
+                        <p>
+                        <strong>Art. 68. </strong>A concessão da licença para capacitação dar-se-á no interesse da Administração, podendo ser negada por 
+                        necessidade de serviço ou inexistência de relação entre a capacitação proposta e as necessidades 
+                        </p>
+                        <p>
+                        <strong>Art. 69. </strong>  Os períodos utilizados pelo docente para o gozo de Licença para Capacitação serão descontados para fins de 
+                        aposentadoria diferenciada de professor.
+                        </p>
+                        <p>
+                        <strong> Art. 70. </strong> É vedada a contratação de substituto, na forma da Lei nº 8.745, de 9 de dezembro de 1993, para servidor 
+                        em gozo de licença para capacitação.
+                        </p>
+                          [...]
+                        <p>
+                        <strong> Art. 74. </strong>   Ao término da licença, o servidor deverá apresentar, no prazo máximo de 30 (trinta) dias, o (s) documento(s) 
+                        comprobatório(s) de participação e conclusão na referida ação de desenvolvimento/capacitação à 
+                        Coordenação de Gestão de Pessoas (no caso de servidores lotados no campus) ou à DGP (no caso de servidores 
+                        lotados na Reitoria).
+                        </p>
+                        <p>
+                        <strong> § 1º </strong> A não apresentação da referida documentação culminará no desconto dos dias usufruídos para 
+                            a Licença para Capacitação, por meio de processo de reposição ao erário.
+                        </p>
+                        (...)
+                        <p>
+                        <strong>Art. 75.</strong> O servidor somente estará autorizado a iniciar a licença após a publicação da respectiva portaria, 
+                            sob pena de se considerar a ausência ao serviço como falta não justificada.
+                        </p>
+                        [...]
+                        <p>
+                        <strong> Art. 77. </strong>Quando a licença para capacitação for concedida de forma parcelada, deverá ser observado o interstício mínimo 
+                            de (60) sessenta dias entre quaisquer períodos de gozo de licença para capacitação.
+                        </p>
+                        <p>
+                        <strong>Art. 78. </strong> O servidor que gozar da Licença para Capacitação deverá permanecer por dois anos em exercício no respectivo 
+                        cargo efetivo, a contar do término da licença para capacitação, para afastar-se integralmente para participar de 
+                        programa de pós-graduação stricto sensu, exceto nos casos de pós-doutorado, nos termos da legislação e das normativas 
+                        vigentes à época da análise e concessão.
+                        </p>
+                         [...]
+                        <p>
+                        <strong>Art. 80. </strong> O servidor que abandonar ou não concluir a ação de desenvolvimento deverá ressarcir ao IFC o montante 
+                         correspondente à remuneração percebida no período da licença, nos termos da legislação vigente, sem prejuízo da 
+                         apuração de eventual responsabilização penal, administrativa e civil.
+                        </p>
+                         [...]
+                        <p>
+                        <strong>Art. 82. </strong> Os períodos aquisitivos quinquenais, para a Licença para Capacitação, serão computados a partir da data de 
+                          exercício no serviço público federal, sem quebra de vínculo.
+                        </p>
+                        <p>
+                        <strong>Parágrafo único:</strong> A Licença para Capacitação não poderá ser concedida a servidor em estágio probatório, mesmo que 
+                        estável em outro cargo anteriormente ocupado.
+                        </p>
+
+                             (Original sem grifos)
+
+                    </blockquote>
+
+                        <p>
+                             Neste sentido, considerando a concordância da Chefia Imediata e da Direção-Geral do Campus (ou Pró-Reitoria) 
+                         com a proposta de licença capacitação apresentada pelo(a) servidor(a) interessado(a), esta Diretoria de Gestão de 
+                        Pessoas é favorável à concessão da Licença para Capacitação ao (à) servidor (a) <span contenteditable="true" 
+                        class="campo-inline" id="requerente3"></span>, 
+                        ocupante do cargo de <span contenteditable="true" class="campo-inline" id="cargo2"></span>, Matrícula SIAPE nº 
+                          <input type="text" size="7" maxlength="7"> lotado no(a) 
+                          <select name="lotacao">
+                            <option>Campus Abelardo Luz</option>
+                            <option>Campus Araquari</option>
+                            <option>Campus Blumenau</option>
+                            <option>Campus Brusque</option>
+                            <option>Campus Camboriú</option>
+                            <option>Campus Concórdia</option>
+                            <option>Campus Fraiburgo</option>
+                            <option>Campus Ibirama</option>
+                            <option>Campus Luzerna</option>
+                            <option>Campus Rio do Sul</option>
+                            <option>Campus Santa Rosa do Sul</option>
+                            <option>Campus São Bento do Sul</option>
+                            <option>Campus São Francisco do Sul</option>
+                            <option>Campus Sombrio</option>
+                            <option>Campus Videira</option>
+                            <option>Reitoria Administrativa</option>
+                          </select> para ação de desenvolvimento presencial ou à distância, no(a) <span contenteditable="true" 
+                             class="campo-inline" placeholder="Instituição Promotora"> </span> 
+                              com fundamento no art. 87 da Lei nº 8.112, de 11 de dezembro de 1990, com a redação dada pela 
+                              Lei nº 9.527, de 10 de dezembro de 1997, e na Nota técnica  SEI nº 43661/2022/ME, combinados com o art. 25 da 
+                              Lei nº 9.527, de 10 de dezembro de 1997, com nova redação dada pelo Decreto nº 10.506, de 2 de outubro de 2020, 
+                              referente ao quinquênio compreendido entre  <input type="text"  value="--/--/----"> a 
+                             <input type="text"  value="--/--/----">, pelo prazo <input type="number" class="input-numero" id="dias4"> dias,  
+                             de <input type="text" value="--/--/----"> a <input type="text" value="--/--/----">. 
+                            A licença Capacitação foi concedida para ação de desenvolvimento presencial ou à distância, conforme art. 25, I, 
+                            do Decreto 9.991/2019; código 
+                            <select name="código">
+                                <option>421</option>
+                                <option>396</option>
+                            </select>
+                         </p>
+                         <p>
+                             O não atendimento às orientações deste parecer implicará na abertura de processo de reposição ao erário, 
+                            referente aos dias em que não restar comprovado que foram utilizados para a realização da ação ou do curso de 
+                            capacitação.
+                         </p>
+                         <p>
+                              Outrossim, informamos que o(a) servidor(a) deverá participar da ação de capacitação por ele(a) proposto(a), 
+                              sendo vedada a mudança, exceto por justificativa devidamente fundamentada e concordância da Chefia Imediata e 
+                             Direção-Geral do Campus. 
+                         </p>
+                         <p>
+                            É o entendimento.
+                         </p>
+                         <p>
+
+                                  À apreciação da Diretoria de Gestão de Pessoas e Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência à Pessoa, para ciência e assinaturas.
+
+                        </p>
+
+                        <button class="button-pdf"  onclick= "gerarPDF()">
+                         Gerar PDF
+                        </button>
+                </form>
+            </div>
+        </section>
+      
+
+        <footer class="rodape">
+
+          <img src="../../img/logo_ifc.png" class="logoifc"  alt="Logo IFC">
+
+          <div class="endereco">  
+
+           <img src="../../img/end_rodape.png"  alt="Endereço da Reitoria IFC">
+
+       </footer>
+
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../../js/menu.js" defer></script>
+    <script src="../../js/pareceres.js" defer></script>
+ </body>
+</html>

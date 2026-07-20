@@ -1,0 +1,212 @@
+:root {
+  /*--fontes--*/
+  --fonte-principal: "Trebuchet MS", Helvetica, sans-serif;
+  --fonte-formulario: "Calibri", "Segoe UI", Arial, sans-serif;
+
+  /*--tamanho--*/
+  --size-geral: 14px;
+  --size-smaller: 12px;
+  --size-short-geral: 15px;
+  --size-short-input: 16px;
+  --size-campo: 1rem;
+  
+  /*--border-radius--*/
+  --radius-grande: 15px;
+  --radius-medio: 12px;
+  --radius-pequeno: 10px;
+
+  /*--cores--*/
+  --verde-principal: #2f5e2f;
+  --verde-principal-hover: rgb(143, 188, 143);
+  --cor-texto-principal-hover: #2f4f4f;
+  --cor-quinquenio-hover: rgb(192, 224, 199);
+  --branco-principal: #ffffff;
+  --cor-border-rodape: #ccc;
+  --preto-principal: #000000;
+  --cor-concessoes:  #197419;
+  --cor-concessoes-hover: #006400;
+  --cor-texto-conces-hover: #cce0cc;
+  --cor-prorrogacoes:  #4e6969;
+  --cor-prorrogacoes-hover: #2f4f4f;
+  --cor-texto-prorrog-hover: #c1caca;
+  --cor-alteracao: #26269c;
+  --cor-alteracao-hover: #00008B;
+  --cor-texto-alt-hover: #cccce8;
+  --cor-interrupcao:  #daa520;
+  --cor-interrupcao-hover: #FFD700;
+  --cor-texto-inter-hover:  #8b4513;
+  --cor-encerramento:  #ae5cae;
+  --cor-encerramento-hover: #932693;
+  --cor-texto-encer-hover:  #dfbedf;
+  --cor-indeferimento: #a23333;
+  --cor-indeferimento-hover: #8b0000;
+  --cor-texto-indef-hover: #e8cccc;
+  --cor-formularios: #708090;
+  --cor-formularios-hover:  #ff4500;
+  --cor-divisor:#d6d6d6;
+}
+
+/*--home-index--*/
+
+/*--index.html--*/
+.pagina-inicial {
+  height: 120vh;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 60vh;
+  text-align: center;
+  padding: 10px;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+.index-nav {
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-column: 1/-1;
+   margin-top: 10px;
+   align-content: start;
+   justify-content: center;
+   gap: 40px; 
+}
+
+.btn-home, .btn-home-form {
+  background-color: #2f5e2f;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  color:#ffffff;
+  width: 100%;
+  border-radius: 12px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.btn-home.btn-home-form a {
+  text-decoration: none;
+  color: var(--branco-principal);
+}
+
+.btn-home:hover {
+  text-decoration: none;
+  background-color: var(--verde-principal-hover);
+  color: var(--cor-texto-orincipal-hover);
+  transition: .5s;
+}
+
+.btn-home-form:hover {
+  text-decoration: none;
+  background-color: var(--cor-formularios-hover);
+  color: var(--branco-principal);
+  font-weight: 600;
+  transition: .5s;
+}
+
+/*--header--*/
+
+html {
+    background-color: var(--branco-principal);
+}
+
+.cabecalho {
+    position: relative;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+}
+
+.logo {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.logo img {
+  width: 350px;
+  text-align: center;
+}
+
+h3, h4, h5 {
+    text-align: center;
+    padding: 20px;
+    font-weight: 700;
+}
+
+/*--botões --*/
+
+.btn {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  margin-left: auto;
+  padding: 10px 16px;
+  cursor: pointer;
+  background-color: var(--verde-principal);
+  color: var(--branco-principal);
+  border: none;
+  border-radius: var(--radius-medio);
+}
+
+.btn:hover {
+  color: var(--verde-principal);
+  font-weight: 600;
+  font-size: 0.9em;
+  background-color: rgb(143, 188, 143);
+}
+
+/*--rodapé--*/
+
+.rodape {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 0;
+     align-items: center;
+     border-top: 1px solid var(--cor-border-rodape);
+     padding-top: 20px;
+}
+
+.rodape img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.shorter {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 0;
+     align-items: center;
+     border-top: 1px solid var(--cor-border-rodape);
+     padding-top: 20px;
+}
+
+.shorter img {
+   width: 150px;
+   margin-bottom: 10px;
+}
+
+.logoifc {
+    justify-content: left;
+    width: 180px;
+    max-width: 100%;
+    margin-left: 10px;
+}
+
+.endereco {
+  width: 220px;
+  margin-left: auto;
+  text-align: right;
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+
+@page {
+  margin: 2cm;
+}

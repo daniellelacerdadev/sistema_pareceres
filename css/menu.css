@@ -1,0 +1,202 @@
+/*--Menu--*/
+
+
+aside {
+  margin: 60px 0;
+}
+
+aside button {
+    transition: .2s;
+}
+
+.docs-ativo button.active {
+    outline: 2px solid #222;
+    outline-offset: 2px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.18);
+    font-weight: 700;
+}
+
+.form-ativo button.active {
+   background-color:var(--cor-formularios-hover);
+    outline: 2px solid var(--cor-formularios-hover);
+    color: var(--branco-principal);
+    outline-offset: 2px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.18);
+    font-weight: 700;
+}
+
+
+.container-principal {
+  display: grid;
+  height: 80vh;
+  margin-left: 50px;
+  padding-top: 50px;
+  margin-top: 10px;
+  grid-template-columns: 220px 2px 770px;
+  justify-items: auto;
+  align-items: center;
+  gap: 40px;
+}
+
+
+h2 {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.divisor {
+  width: 2px;
+  background-color: var(--cor-divisor);
+  height:100%;
+  margin-bottom: 40px;
+}
+
+#btn-concessoes, #btn-alteracao, 
+ #btn-interrupcao, #btn-indeferimento,
+ #btn-prorrogacoes, #btn-encerramento {
+  width: 200px;
+  margin-bottom: 5px;
+  border-radius: var(--radius-grande);
+  padding: 10px 24px;
+  align-self: center;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  color: var(--branco-principal);
+}
+
+#btn-concessoes {
+  background-color: var(--cor-concessoes);
+}
+
+#btn-concessoes:hover {
+  width: 205px;
+  background-color: var(--cor-concessoes-hover);
+  color: var(--cor-texto-conces-hover);
+  border-color: var(--cor-concessoes-hover);
+  font-weight: 500;
+  transform: .3s;
+}
+
+#btn-prorrogacoes {
+  background-color: var(--cor-prorrogacoes);
+}
+
+#btn-prorrogacoes:hover {
+  width: 205px;
+  background-color: var(--cor-prorrogacoes-hover);
+  color: var(--cor-texto-prorrog-hover);
+  border-color: var(--cor-prorrogacoes-hover);
+  font-weight: 500;
+  transform: .3s;
+}
+
+#btn-alteracao {
+  background-color:var(--cor-alteracao);
+}
+
+#btn-alteracao:hover {
+  width: 205px;
+  background-color: var(--cor-alteracao-hover);
+  color: var(--cor-texto-alt-hover);
+  border-color: var(--cor-alteracao-hover);
+  font-weight: 500;
+  transform: .3s;
+}
+
+
+#btn-interrupcao {
+  background-color: var(--cor-interrupcao);
+}
+
+#btn-interrupcao:hover {
+  width: 205px;
+  background-color: var(--cor-interrupcao-hover);
+  color: var(--cor-texto-inter-hover);
+  border-color: var(--cor-interrupcao-hover);
+  font-weight: 500;
+  transform: .3s;
+}
+
+#btn-encerramento {
+  background-color: var(--cor-encerramento);
+}
+
+#btn-encerramento:hover {
+  width: 205px;
+  background-color: var(--cor-encerramento-hover);
+  color: var(--texto-encer-hover);
+  border-color: var(--cor-encerramento-hover);
+  font-weight: 500;
+  transform: .3s;
+}
+
+#btn-indeferimento {
+  background-color: var(--cor-indeferimento);
+}
+
+#btn-indeferimento:hover {
+  width: 205px;
+  background-color: var(--cor-indeferimento-hover);
+  color: var(--cor-texto-indef-hover);
+  border-color: var(--cor-indeferimento-hover);
+  font-weight: 500;
+  transform: .3s;
+}
+
+.btn-formularios {
+  background-color: var(--cor-formularios);
+  color: var(--preto-principal);
+  width: 200px;
+  margin-bottom: 3px;
+  border-radius: var(--radius-grande);
+  padding: 10px 24px;
+  align-self: center;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-formularios:hover {
+  background-color: var(--cor-formularios-hover);
+  color: var(--branco-principal);
+  font-weight: 700;
+  border: none;
+}
+
+#conteudo {
+  margin-left: 50px;
+  padding-top: 50px;
+}
+
+.mensagem-inicial {
+  margin-top: 60px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/*--Breadcrumb--*/
+
+.breadcrumb {
+    margin: 10px 5px;
+    padding: 15px 20px;
+    font-size: 0.95rem;
+    color: #666;
+    gap: 5px;
+}
+
+.breadcrumb a {
+    color: var(--verde-principal);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #222;
+    font-weight: 600;
+}

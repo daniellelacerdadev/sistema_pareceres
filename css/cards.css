@@ -1,0 +1,134 @@
+
+.menu-card{
+    padding: 20px;
+    margin-bottom: 12px;
+    border-radius: var(--radius-grande);
+    cursor: pointer;
+    transition:.2s;
+}
+
+.card-concessao, .card-alteracao, .card-interrupcao, .card-encerramento,
+.card-prorrogacoes, .card-indeferimento, .card-formularios {
+    opacity: 0;
+    transform: translateX(-25px);
+    animation: aparecerCard .3s ease forwards;
+}
+
+.card-concessao {
+    background-color: var(--cor-concessoes);
+    color: var(--branco-principal);
+    transition: all 0.2s ease;
+}
+
+.card-concessao:hover  {
+  max-width: 100%;
+  background-color: var(--cor-concessoes-hover);
+  color: var(--cor-texto-conces-hover);
+  border-color: var(--cor-concessoes-hover);
+  font-weight: 700;
+  border-radius: var(--radius-grande);
+  transform: translateY(-2px);
+}
+
+.card-prorrogacoes {
+    background-color: var(--cor-prorrogacoes);
+    color: var(--branco-principal);
+    transition: all 0.2s ease;
+}
+
+.card-prorrogacoes:hover {
+  max-width: 100%;
+  background-color: var(--cor-prorrogacoes-hover);
+  color: var(--cor-texto-prorrog-hover);
+  border-color: var(--cor-prorrogacoes-hover);
+  font-weight: 700;
+  border-radius: var(--radius-grande);
+  transform: translateY(-2px);
+}
+
+.card-alteracao {
+    background-color: var(--cor-alteracao);
+    color: var(--branco-principal);
+    transition: all 0.2s ease;
+}
+
+.card-alteracao:hover {
+    max-width: 100%;
+    background-color: var(--cor-alteracao-hover);
+    color: var(--cor-texto-alt-hover);
+    border-color: var(--cor-alteracao-hover);
+    font-weight: 700;
+    border-radius: var(--radius-grande);
+    transform: translateY(-2px);
+}
+
+.card-interrupcao {
+    background-color: var(--cor-interrupcao);
+    color: var(--branco-principal);
+    transition: all 0.2s ease;
+}
+
+.card-interrupcao:hover {
+    max-width: 100%;
+    background-color: var(--cor-interrupcao-hover);
+    color: var(--cor-texto-inter-hover);
+    border-color: var(--cor-interrupcao-hover);
+    font-weight: 700;
+    border-radius: var(--radius-grande);
+    transform: translateY(-2px);
+}
+
+.card-encerramento {
+    background-color: var(--cor-encerramento);
+    color: var(--branco-principal);
+    transition: all 0.2s ease;
+}
+
+.card-encerramento:hover {
+    max-width: 100%;
+    background-color: var(--cor-encerramento-hover);
+    color: var(--cor-texto-encer-hover);
+    border-color: var(--cor-encerramento-hover);
+    font-weight: 700;
+    border-radius: var(--radius-grande);
+    transform: translateY(-2px);
+}
+
+.card-indeferimento {
+    background-color: var(--cor-indeferimento);
+    color: var(--branco-principal);
+    transition: all 0.2s ease;
+}
+
+.card-indeferimento:hover {
+    max-width: 100%;
+    background-color: var(--cor-indeferimento-hover);
+    color: var(--cor-texto-indef-hover);
+    border-color: var(--cor-indeferimento-hover);
+    font-weight: 700;
+    border-radius: var(--radius-grande);
+    transform: translateY(-2px);
+}
+
+.card-formularios {
+    background-color: var(--cor-formularios);
+    color: var(--preto-principal);
+    transition: all 0.2s ease;
+}
+
+.card-formularios:hover {
+     max-width: 100%;
+    background-color: var(--cor-formularios-hover);
+    color: var(--branco-principal);
+    border-color: var(--cor-formularios-hover);
+    font-weight: 700;
+    border-radius: var(--radius-grande);
+    transform: translateY(-2px);
+}
+
+@keyframes aparecerCard {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

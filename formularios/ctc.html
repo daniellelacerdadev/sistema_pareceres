@@ -10,33 +10,41 @@
     crossorigin="anonymous">
 
     <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/geral.css">
+    <link rel="stylesheet" type="text/css" href="../css/documentos.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
 
 
     <title>CERTIDÃO DE TEMPO DE CONTRIBUIÇÃO</title>
  </head>
- <body id="formulario">
+ <body id="formulario"
+    data-inicio="../../index.html"
+    data-menu="Formulários"
+    data-parecer="Certidão de Tempo de Contribuição"
+    data-link-menu="../../menu/formularios.html">
          <header class="cabecalho">
 
             <div class="logo">
                 <img src="../img/logo_govofc.png" width="800"  alt="Logo do governo e dados do órgão de emissão">
              </div>
 
-           <nav>
+           <nav id="breadcrumb" class="breadcrumb">
 
-                <a
-                 href="../index.html"
-                    class="btn btn-outline-rosa">
+                <a href="../../index.html">Início</a>
 
-                  Voltar ao Menu Principal
+                <span>></span>
 
-                </a>
+                <a href="../../menu/formularios.html">Formulários</a>
 
-           </nav>
+                <span>></span>
+
+                <span id="breadcrumb-atual">Certidão de Tempo de Contribuição</span>
+    
+            </nav>
         </header>
 
         <section class="principal">
-            <div class="container">
+            <div class="corpo-parecer">
                 <form action="" id="requerimento">
 
                     <h4>CERTIDÃO DE TEMPO DE CONTRIBUIÇÃO</h4>
@@ -1112,6 +1120,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="../js/script.js" defer></script>
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/formularios.js" defer></script>
  </body>
 </html>

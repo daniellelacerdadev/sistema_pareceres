@@ -10,33 +10,42 @@
     crossorigin="anonymous">
 
     <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/geral.css">
+    <link rel="stylesheet" type="text/css" href="../css/documentos.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+
 
 
     <title>Parecer Licença Maternidade e Prorrogação</title>
  </head>
- <body id="short">
+ <body id="short"
+    data-inicio="../../index.html"
+    data-menu="Licença Maternidade"
+    data-parecer="Para concessão de licença maternidade e Prorrogação"
+    data-link-menu="../../menu/licencamaternidade.html">
          <header class="cabecalho">
 
             <div class="logo">
                 <img src="../img/logo_gov.png" width="400"  alt="Logo do governo e dados do órgão de emissão">
              </div>
 
-           <nav>
+           <nav id="breadcrumb" class="breadcrumb">
 
-                <a
-                 href="../index.html"
-                    class="btn btn-outline-rosa">
+                <a href="../../index.html">Início</a>
 
-                  Voltar ao Menu Principal
+                <span>></span>
 
-                </a>
+                <a href="../../menu/licencagestante.html">Licença Maternidade</a>
 
-           </nav>
+                <span>></span>
+
+                <span id="breadcrumb-atual">Para a concessão de licença maternidade e prorrogação</span>
+    
+            </nav>
         </header>
 
         <section class="tramitacao">
-            <div class="container">
+            <div class="corpo-parecer">
                 <h4>PARECER DE LICENÇA MATERNIDADE E PRORROGAÇÃO</h4>
                 <form action="" id="requerimento">
 
@@ -240,6 +249,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="../js/script.js" defer></script>
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/pareceres.js" defer></script>
  </body>
 </html>

@@ -5,279 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Pareceres</title>
 
-     <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-     <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
     crossorigin="anonymous">
+    
+     <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/geral.css">
 
      <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/1e631c2bc0.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <main class="home">
+<body class="pagina-inicial">
+    <header class="home">
 
-    <img
+      <img
       src="img/logo_gov.png"
       alt="Logo IFC"
       class="logo-home">
 
-    <h1>
+      <h1>
       Sistema Web de Documentos Institucionais
-    </h1>
+      </h1>
 
-    <p>
+      <h4 class="index">
       Modelos automatizados para emissão de documentos administrativos.
-    </p>
+    </h4>
+   </header>
 
-          <nav class="menu">
+  <main>
+       <nav class="index-nav">
                 
-              <ul class="menu-principal">
-
-                 <li class="dropdown"> <!--Início formulários-->
-                   
-                  <button class="dropbtn"> 
-                    Formulários
-                  </button> 
-
-                    <ul class="dropdown-content"> <!--inicio dropdown-content Aposentadoria-->
-                      
-                      <li>
-                        <a href="#">
-                          Aposentadoria
-                          <span class="seta"><i class="fa-solid fa-circle-chevron-right">
-                          </i></span>
-                        </a>
-                      
-                         <ul class="submenu-lateral"> <!--inicio submenu lateral aposentadoria-->
-
-                            <li>
-                              <a href="formularios/ctc.html">
-                                 Certidão de Tempo de Contribuição                              
-                              </a>
-                            </li>
-                          </ul>
-                      </li>
-                    </ul>
-                </li>
-                
-                <li class="dropdown"> <!--Início Afastamentos-->
-                   
-                  <button class="dropbtn"> 
-                    Afastamentos
-                  </button> 
-
-                    <ul class="dropdown-content"> <!--inicio dropdown-content Afastamentos-->
-
-                      <li>
-                        <a href="#">
-                          Afastamento do País
-                          <span class="seta"><i class="fa-solid fa-circle-chevron-right"></i></span>
-                        </a>
-                        <ul class="submenu-lateral">
-                          <li>
-                            <a href="pareceres/afastpais-onuslim.html">
-                              Com Ônus Limitado
-                            </a>
-                          </li>
-                          <li>
-                            <a href="pareceres/afastpais-onusifc.html">
-                              Com Ônus para o IFC
-                            </a>
-                          </li>
-
-                        </ul>
-                      </li>
-
-                      <li> <!--inicio menu afastamento integral-->
-                        <a href="#"> 
-                        Afastamento Integral 
-                         <span class="seta"><i class="fa-solid fa-circle-chevron-right"></i></span>
-                        </a>
-
-                          <ul class="submenu-lateral"> <!--inicio submenu lateral afastamento integral-->
-
-                            <li>
-                              <a href="pareceres/afastint-tae.html">
-                                  Afast. Integral - Concessões TAES                               
-                              </a>
-                            </li>
-                            <li>
-                              <a href="pareceres/afastint-docentes.html">
-                                  Afast. Integral - Concessões Docentes                               
-                              </a>
-                            </li>
-                            <li>
-                              <a href="pareceres/afastint-prorrogacao.html">
-                                  Afast. Integral - Prorrogação                               
-                              </a>
-                            </li>
-                            <li>
-                              <a href="pareceres/afastint-novaprorrog.html">
-                                  Afast. Integral - Novo Pedido de Prorrogação                              
-                              </a>
-                            </li>
-                            <li>
-                              <a href="pareceres/afastint-indefpedagio.html">
-                                  Afast. Integral - Indeferimento conforme § 3º, Art. 25                             
-                              </a>
-                            </li>
-                          
-                         </ul> <!--Fim Submenu Lateral - Afastamento Integral-->
-
-                      </li><!--fim menu afastamento integral-->    
-
-                    </ul> <!--fim dropdown-content afastamentos-->
-
-                </li> <!--fim dropdown Afastamentos -->
-                      
-                <li class="dropdown"> <!--Início Horário Especial-->
-                   
-                  <button class="dropbtn"> 
-                    Horário Especial
-                  </button> 
-
-                    <ul class="dropdown-content"> <!--início dropdown-content Horário especial-->
-
-                      <li> <!--início menu HEE estudante-->
-                        <a href="">
-                          Horário Especial de Estudante
-                          <span class="seta"><i class="fa-solid fa-circle-chevron-right"></i></span>
-                        </a>
-
-                          <ul class="submenu-lateral"> <!--inicio submenu lateral horário especial de estudante-->
-
-                            <li>
-                              <a href="pareceres/hee-concessao.html">
-                                  HE de Estudante - Concessão                             
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                  HE de Estudante - Encerramento                               
-                              </a>
-                            </li>
-                          
-                         </ul> <!--Fim Submenu Lateral - HEE Estudante-->
-                      </li> <!--fim menu HE estudante-->
-                      <li> <!--início menu HE PcD-->
-                        <a href="#"> 
-                        Horário Especial PcD 
-                         <span class="seta"><i class="fa-solid fa-circle-chevron-right"></i></span>
-                        </a>
-
-                          <ul class="submenu-lateral"><!--Início submenu lateral HEE PcD-->
-
-                            <li>
-                              <a href="#">
-                                  Horário Especial Servidor PcD                              
-                              </a>
-                            </li>
-                            <li>
-                              <a href="pareceres/hepcd-familiar.html">
-                                  Horário Especial Familiar PcD                          
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                  Horário Especial PcD - Encerramento                             
-                              </a>
-                            </li>
-                          
-                          </ul> <!--Fim Submenu Lateral - HEE pcd-->
-
-                      </li> <!--fim Horário especial pcd -->
-
-                    </ul> <!--fim dropdown-content horário especial-->  
-
-                </li> <!--fim dropdown horário especial-->
-
-                <li class="dropdown"> <!-- início dropdown Licenças-->
-
-                  <button class="dropbtn">
-                       Licenças
-                  </button>
-
-                    <ul class="dropdown-content"> <!--início dropdown licença licenças-->
-
-                      <li>
-
-                        <a href="#">
-                        Licença para Capacitação 
-                         <span class="seta"><i class="fa-solid fa-circle-chevron-right"></i></span>
-                        </a>
-
-                          <ul class="submenu-lateral"> <!--inicio submenu lateral licença capacitação-->
-
-                            <li>
-                              <a href="pareceres/lc-421-396.html">
-                                  Para ações de desenvolvimento                               
-                              </a>
-                            </li>
-                            <li>
-                              <a href="pareceres/lc-422-397.html">
-                                  Elaboração de trabalho de Pós-Graduação
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                  Curso com atividades práticas
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                  Curso com trabalho voluntário
-                              </a> 
-                            </li>
-                            <li>
-                              <a href="pareceres/lc-ocorrencias.html">
-                                  Com ocorrências que alteram quinquênio
-                              </a> 
-                            </li>
-                            <li>
-                              <a href="pareceres/lc-alteracaocurso.html">
-                                  Alteração de Curso
-                              </a> 
-                            </li>
-                          </ul>
-                      </li>
-                      <li> 
-                        <a href="#">
-                        Licença para tratar de Interesses Particulares
-                         <span class="seta"><i class="fa-solid fa-circle-chevron-right"></i></span>
-                        </a>
-                            <ul class="submenu-lateral">
-
-                              <li>
-                                <a href="#">
-                                  Concessão LIP
-                                </a>
-                              </li>
-                            </ul>
-                      </li>
-
-                      <li> <!--início menu Licecnça gestante-->
-                        <a href="pareceres/lic-gestante.html">
-                        Licença Gestante e Prorrogação
-                        </a>
-                      </li> <!--fim menu licença gestante-->
-
-                      <li> <!--inicio menu licecnça maternidade-->
-                        <a href="pareceres/lic-maternidade.html">
-                        Licença Maternidade e Prorrogação (profª subst.)
-                        </a>
-                      </li> <!--fim menu licença maternidade-->
-                    </ul>
-              
-
-                </li> <!--Fim Licenças-->
-
-
-              </ul> <!--Fim Menu Principal-->
-
-                        
+            <a href="menu/formularios.html" class="btn-home-form">Formulários</a>
+            <a href="menu/afastintegral.html" class="btn-home">Afastamento Integral</a>
+            <a href="menu/afastamentopais.html" class="btn-home">Afastamento do País</a>
+            <a href="afastmandato.html" class="btn-home">Afastamento para mandato eletivo </a>
+            <a href="menu/afastcursoformacao.html" class="btn-home">Afastamento para Curso de Formação </a>
+            <a href="menu/heestudante.html" class="btn-home">Horário Especial de Estudante</a>
+            <a href="menu/hepcd.html" class="btn-home">Horário Especial Servidor/Familiar PcD</a>
+            <a href="menu/licencacapacitacao.html" class="btn-home">Licença Capacitação</a>
+            <a href="menu/licencainteressesparticulares.html" class="btn-home">Licença Para Tratar de Interesses Particulares</a>
+            <a href="menu/licencagestante.html" class="btn-home">Licença Gestante</a>
+            <a href="menu/licencamaternidade.html" class="btn-home">Licença Maternidade</a>
+            <a href="lic-atividadepolitica.html" class="btn-home">Licença para Atividade Política</a>
+                            
           </nav>     
 
   </main>
