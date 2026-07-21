@@ -78,6 +78,7 @@
 
 .btn-home, .btn-home-form {
   background-color: #2f5e2f;
+  height: 64px;
   font-weight: 700;
   text-align: center;
   border: none;
