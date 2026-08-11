@@ -29,7 +29,7 @@ btnConcessoes.addEventListener("click", function () {
     btnConcessoes.classList.add("active");
 
     atualizarBreadcrumb(
-         "../index.html",
+         "/index.html",
         "Concessões",
         "Licença Gestante e Prorrogação",
         "licencamaternidade.html"
