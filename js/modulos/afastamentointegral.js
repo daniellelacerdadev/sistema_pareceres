@@ -71,10 +71,10 @@ const alteracao = [
     {
 
         titulo:
-        "Para alteração de curso",
+        "Para alteração de programa",
 
         pagina:
-        "../pareceres/afastamento-integral/afastint-alteracaocurso.html"
+        "../pareceres/afastamento-integral/afastint-alteracaoprograma.html"
 
     }
 ];
@@ -175,7 +175,7 @@ btnAlteracoes.addEventListener("click", function () {
 
     atualizarBreadcrumb(
         "../index.html",
-        "Alteração de Curso",
+        "Alteração de Programa",
         "Afastamento Integral",
         "afastintegral.html"
     );
