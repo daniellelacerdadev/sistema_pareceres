@@ -76,6 +76,15 @@ const alteracao = [
         pagina:
         "../pareceres/afastamento-integral/afastint-alteracaoprograma.html"
 
+    },
+    {
+
+        titulo:
+        "Para alteração de nível",
+
+        pagina:
+        "../pareceres/afastamento-integral/afastint-alteracaonivel.html"
+
     }
 ];
 
