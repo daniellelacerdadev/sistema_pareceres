@@ -30,7 +30,7 @@ const concessoes = [
         "Para servidores com familiar PcD",
 
         pagina:
-        "../pareceres/he-especial-pcd/hepcd-familiar.html"
+        "../pareceres/horario-especial-pcd/hepcd-familiar.html"
 
     }
   
@@ -68,7 +68,7 @@ const indeferimento = [
         "Para indeferimento de horário especial de servidor com familiar PcD",
 
         pagina:
-        "../pareceres/horario-especial-pcd/hepcd-familiar.html"
+        "../pareceres/horario-especial-pcd/hepcd-indef-familiar.html"
     }
 ];
 
