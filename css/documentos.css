@@ -252,7 +252,7 @@ fieldset {
 }
 
 .atualiza-quinquenio th {
-  text-align: center;
+  text-align: left;
   background-color: var(--cor-quinquenio-hover);
   border: 2px double var(--preto-principal);
 }

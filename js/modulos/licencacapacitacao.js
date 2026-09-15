@@ -59,6 +59,14 @@ const concessoes = [
 
         pagina:
         "../pareceres/licenca-capacitacao/ocorrencia-quinquenio.html"
+    },
+    
+     {
+         titulo:
+        "Com ocorrências que alteram o quinquênio - para conclusão de trabalho de pós-graduação ",
+
+        pagina:
+        "../pareceres/licenca-capacitacao/ocorrenciaquinq-trabposgrad.html"
     }
 ];
 
