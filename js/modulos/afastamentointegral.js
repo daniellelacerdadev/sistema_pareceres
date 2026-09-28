@@ -101,10 +101,10 @@ const interrupcao = [
 const encerramento = [
     {
         titulo:
-        "Para encerramento antecipado do afastamento integral",
+        "Para encerramento antecipado do afastamento integral prorrogado",
 
         pagina:
-        "../pareceres/afastamento-integral/afastint-encerramento.html"
+        "../pareceres/afastamento-integral/afastint-encerramento-prorrog.html"
     }
 ];
 
@@ -229,7 +229,7 @@ btnEncerramento.addEventListener("click", function () {
 
     atualizarBreadcrumb(
          "../index.html",
-        "Encerramento Antecipado",
+        "Encerramento antecipado para afastamento prorrogado",
         "Afastamento Integral",
         "afastintegral.html"
     );

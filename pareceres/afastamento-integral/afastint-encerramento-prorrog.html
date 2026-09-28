@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="../../css/geral.css">
+    <link rel="stylesheet" type="text/css" href="../../css/documentos.css">
+    <link rel="stylesheet" type="text/css" href="../../css/menu.css">
+
+    <title>Afastamento Integral - Encerramento Antecipado</title>
+</head>
+<body id="short"
+         data-inicio="../../index.html"
+         data-menu="Afastamento Integral"
+         data-parecer="Encerramento antecipado para afastamento prorrogado"
+         data-link-menu="../../menu/afastintegral.html">
+
+     <header class="cabecalho">
+
+            <div class="logo">
+                <img src="../../img/logo_gov.png" width="400"  alt="Logo do governo e dados do órgão de emissão">
+             </div>
+
+           <nav id="breadcrumb" class="breadcrumb">
+
+                <a href="../../index.html">Início</a>
+
+                <span>></span>
+
+                <a href="../../menu/afastintegral.html">Afastamento Integral</a>
+
+                <span>></span>
+
+                <span id="breadcrumb-atual">Interrupção de Afastamento Integral</span>
+    
+            </nav>
+        </header>
+
+        <section class="tramitacao">
+            <div class="corpo-parecer">
+                <h4>PARECER DE ENCERRAMENTO ANTECIPADO DE AFASTAMENTO INTEGRAL</h4>
+                <form action="" id="requerimento">
+
+                    <table class="tabela">                  
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="titulo">Tramitação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Número do Processo:</th>
+                                <td><input type="text" placeholder="Digite o número do processo" width="100%">  </td>
+                            </tr>
+                            <tr>
+                                <th>Assunto:</th>
+                                <td>Encerramento Antecipado de Afastamento Integral</td>
+                            </tr>
+                            <tr>
+                                <th>Requerente:</th>
+       
+                                <td><input type="text" placeholder="Digite o nome do servidor requerente" width="100%" id="requerente"></td>
+                             </tr>
+                            <tr>
+                                <th>Origem:</th>
+                                <td>CCAA/CGPCAP/DGP/PROPESSOAS/REITORIA/IFC</td>
+                            </tr>
+                            <tr>
+                                <th>Data da tramitação:</th>
+                                <td><input  type="text" id="data-emissao"  width="100%" align-self-center>  </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </section>
+        <section class="texto">
+            <div class="container">
+                <form>
+                    
+                    <p>
+                       Trata-se de Encerramento Antecipado do Afastamento Integral para participação em programa de
+                        <span contenteditable="true" id="programa" class="campo-inline"></span>, junto à <span contenteditable="true"
+                       id="instituicao" class="campo-inline"></span>, do(a) servidor(a) <span contenteditable="true" class="campo-inline" id="requerente2"></span>, 
+                        ocupante do Cargo de <span contenteditable="true" class="campo-inline"></span>, lotado no(a) 
+                        <select name="lotacao">
+                            <option>Campus Abelardo Luz</option>
+                            <option>Campus Araquari</option>
+                            <option>Campus Blumenau</option>
+                            <option>Campus Brusque</option>
+                            <option>Campus Camboriú</option>
+                            <option>Campus Concórdia</option>
+                            <option>Campus Fraiburgo</option>
+                            <option>Campus Ibirama</option>
+                            <option>Campus Luzerna</option>
+                            <option>Campus Rio do Sul</option>
+                            <option>Campus Santa Rosa do Sul</option>
+                            <option>Campus São Bento do Sul</option>
+                            <option>Campus São Francisco do Sul</option>
+                            <option>Campus Sombrio</option>
+                            <option>Campus Videira</option>
+                            <option>Reitoria Administrativa</option>
+                          </select>,  Matrícula SIAPE sob o nº <input type="text" size="7" maxlength="7">.
+                    </p>
+                    <p>
+                        A autorização para o Afastamento Integral para participar de programa de Pós-Graduação stricto sensu - <select name="programa">
+                            <option>Mestrado</option>
+                            <option>Doutorado</option>
+                            <option>Pós-Doutorado</option>
+                        </select>  do (a) servidor (a) Requerente deu-se através da PORTARIA Nº <input type="text" 
+                    size="9" maxlength="9" id="portaria">, de  <input type="text" placeholder="dd/mm/aaaa" class="campo-data" id="data-portaria">, e sua prorrogação autorizada através da PORTARIA Nº <input type="text" 
+                    size="9" maxlength="9" id="portaria">, de  <input type="text" placeholder="dd/mm/aaaa" class="campo-data" id="data-portaria">.
+                    </p>
+
+                    <p>
+                      A Resolução nº 35/2025-CONSUPER, de 22/12/2025, a qual dispõe sobre Normas de afastamento para ações de capacitação e para licença capacitação dos servidores do IFC, estabelece:
+                    </p>
+
+                        <blockquote>
+                           <p>
+                            <strong>Art. 16. </strong>  O servidor poderá, no interesse da Administração, e desde que a participação não possa ocorrer simultaneamente com o exercício do cargo ou mediante compensação de horário, afastar-se integralmente do exercício do cargo efetivo, com a respectiva remuneração, para participar de programa de pós-graduação stricto sensu em instituição de ensino superior.
+                           </p>
+                           [...]
+                           <p>
+                            <strong>Art. 25. </strong> O servidor beneficiado pelo afastamento previsto de que trata este capítulo deverá permanecer no exercício de suas funções após o seu retorno por um período igual ao do afastamento concedido, não podendo solicitar vacância de cargo, exoneração de cargo, licença para tratar de interesses particulares, aposentadoria antes de decorrido período igual ao do afastamento.
+                           </p>
+                           <p>
+                            <strong>§ 1º </strong> Caso o servidor venha a solicitar vacância de cargo, exoneração de cargo, licença para tratar de interesses particulares, aposentadoria antes de cumprido o período de permanência previsto no caput do artigo, deverá ressarcir ao erário, na forma da legislação vigente, os gastos com seu aperfeiçoamento, integralmente ou valor correspondente à parcela não cumprida do período de permanência.
+                           </p>
+                           [...]
+                           <p>
+                            <strong>Art. 30. </strong> Ao retornar do afastamento, espontaneamente, por avaliação desfavorável, por desistência, por conclusão antes do previsto, expirado o prazo concedido, o servidor deverá reassumir suas atividades imediatamente na instituição.
+                           </p>
+                        </blockquote>
+                        <blockquote>
+                           <p>
+                            <strong>§ 1º </strong> No caso de a conclusão da pós-graduação stricto sensu ocorrer antes do término do período de afastamento, o servidor deverá retornar às suas atividades imediatamente, solicitando à DGP o encerramento antecipado da sua portaria de afastamento mediante o preenchimento de formulário específico disponível no Manual do Servidor do IFC.
+                           </p>
+                           <p>
+                            <strong>§ 2º </strong> casos em que a banca avaliadora do curso de pós-graduação stricto sensu sugerir adequações/ressalvas da dissertação ou tese, o servidor afastado poderá utilizar o período de afastamento para concluir o trabalho, de acordo com o prazo estabelecido em ata de defesa, devendo, nesse caso, entregar uma cópia da ata de defesa para ser anexada ao processo de Afastamento Integral. Este caso prevê a utilização do período já concedido ou o pedido de prorrogação do afastamento considerando o prazo máximo.
+                           </p>
+
+                           <p>
+                            <strong>Art. 31. </strong> A comprovação da obtenção do título deverá ser efetuada em até 90 dias após o término do afastamento, com a apresentação do Diploma ou Declaração emitida pela instituição, com a informação de que foram atendidos todos os requisitos para obtenção do título, restando somente a confecção do Diploma.
+                           </p>
+                           [...]
+                           <p>
+                            <strong>Art. 33. </strong> No caso de término do período do afastamento por tempo proporcional ao tempo de exercício, em que o servidor ainda não concluiu o curso, mas continua frequentando-o, deverá ser apresentado histórico parcial com as disciplinas cursadas no período de afastamento, atestado(s) de matrícula semestralmente e, quando da conclusão do período previsto do programa, o certificado de conclusão, no prazo de até 90 dias.
+                           </p>
+                           <p>
+                            <strong>Art. 34. </strong> Caso o servidor não obtenha o título ou grau que justificou seu afastamento no período previsto, deverá indenizar a instituição nos termos dos arts. 46 e 47 da Lei nº 8.112/1.990, restituindo-á pelas despesas que teve com o afastamento integral, proporcional ao período não trabalhado, salvo na hipótese comprovada de força maior, de caso fortuito ou casos omissos a esta resolução, que serão apreciadas pelo Colegiado de Gestão de Pessoas (Cogepe).
+                           </p>
+                           <p>
+                            <strong>§ 1º </strong> Os conceitos de força maior e caso fortuito deverão ser fundamentados de acordo com o art. 393, parágrafo único, do Código Civil Brasileiro.
+                           </p>
+                           [...]
+                        </blockquote>
+                       
+                      <p>
+                      No estágio atual, tendo em vista a manifestação por parte do Servidor Requerente (documento anexado à ordem <input type="number" class="input-numero">), bem como a ciência da Chefia Imediata, CIS Local e Diretor Geral, esta Diretoria de Gestão de Pessoas manifesta-se favorável pelo encerramento antecipado de Afastamento Integral para cursar Pós-Graduação stricto sensu em <input type="text" placeholder="dd/mm/aaaa" class="campo-data">, em virtude de <span contenteditable="true" 
+                         class="campo-grande"> </span>.
+                      </p>  
+                    <p>
+                      Ressalta-se que de acordo com o disposto no art. 25, § 1º da Resolução nº 35/2025-CONSUPER, de 22/12/2025, caso o servidor venha a solicitar vacância de cargo, exoneração de cargo, licença para tratar de interesses particulares ou aposentadoria, antes de cumprido o período de permanência previsto no caput do artigo, deverá ressarcir ao erário, na forma da legislação vigente, os gastos com seu aperfeiçoamento, integralmente ou valor correspondente à parcela não cumprida do período de permanência.
+                    </p>
+                    <p>
+                      É o entendimento.
+                    </p>
+                    <p>
+                      À apreciação da Diretoria de Gestão de Pessoas e Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência à Pessoa, para ciência e assinaturas.
+                    </p>
+                    <p>
+                    Após, encaminhe-se ao(à) servidor(a) interessado(a) para ciência e, posteriormente tramite-se ao Setor de Portarias da Reitoria para a emissão da respectiva portaria. Por fim, tramite-se à Coordenação de Concessões, Aposentadorias e 
+                    Ações Judiciais (11.01.18.55).
+                    </p>
+
+
+                    <button class="button-pdf"  onclick= "gerarPDF()">
+                         Gerar PDF
+                        </button>
+                </form>
+            </div>
+        </section>
+      
+
+        <footer class="shorter">
+
+          <img src="../../img/logo_ifc.png" class="logoifc"  alt="Logo IFC">
+
+          <div class="endereco">  
+
+           <img src="../../img/end_rodape.png"  alt="Endereço da Reitoria IFC">
+
+       </footer>
+
+      </div>
+
+                    <p>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../../js/menu.js" defer></script>
+    <script src="../../js/pareceres.js" defer></script>
+</body>
+</html>
