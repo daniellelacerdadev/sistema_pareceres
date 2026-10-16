@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,36 +45,41 @@
 
         <section class="tramitacao">
             <div class="corpo-parecer">
-                <h4>PARECER DE LICENÇA CAPACITAÇÃO</h4>
+                <h1>PARECER DE LICENÇA CAPACITAÇÃO</h1>
                 <form action="" id="requerimento">
 
-                    <table class="tabela">                  
-                        <thead>
-                            <tr>
-                                <th colspan="2" class="titulo">Tramitação</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>Número do Processo:</th>
-                                <td><input type="text" placeholder="Digite o número do processo" width="100%">  </td>
-                            </tr>
-                            <tr>
-                                <th>Assunto:</th>
-                                <td>Licença para Capacitação</td>
-                            </tr>
-                            <tr>
-                                <th>Requerente:</th>
+                    <table class="tabela">    
+                         <caption class="sr-only">
+                                Dados de identificação e tramitação do processo
+                        </caption>              
+                            <thead>
+                                <tr>
+                                    <th colspan="2" class="titulo">Tramitação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Número do Processo:</th>
+                                        <td><input type="text" aria-label="Número do processo administrativo" placeholder="Digite o número do processo" width="100%">  </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Assunto do processo:</th>
+                                        <td>Licença para Capacitação</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Requerente:</th>
        
-                                <td><input type="text" placeholder="Digite o nome do servidor requerente" id="requerente"  width="100%"></td>
-                             </tr>
-                            <tr>
-                                <th>Origem:</th>
-                                <td>CCAA/CGPCAP/DGP/PROPESSOAS/REITORIA/IFC</td>
-                            </tr>
-                            <tr>
-                                <th>Data da tramitação:</th>
-                                <td><input  type="text" id="data-emissao" width="100%" align-self-center>  </td>
+                                        <td><input type="text" placeholder="Digite o nome do servidor requerente" 
+                                           aria-label="Nome completo do servidor requerente" id="requerente"  width="100%"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Unidade responsável pela emissão do parecer:</th>
+                                    <td>CCAA/CGPCAP/DGP/PROPESSOAS/REITORIA/IFC</td>
+                                </tr>
+                                <tr>
+                                <th scope="row">Data de emissão do parecer:</th>
+                                <td><input  type="text" 
+                                   aria-label="Data de emissão do parecer" id="data-emissao" width="100%" align-self-center>  </td>
                             </tr>
                         </tbody>
                     </table>
