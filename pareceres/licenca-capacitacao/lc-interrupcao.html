@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="../../css/geral.css">
+    <link rel="stylesheet" type="text/css" href="../../css/documentos.css">
+    <link rel="stylesheet" type="text/css" href="../../css/menu.css">
+
+    <title>Parecer Licença Capacitação</title>
+ </head>
+ <body id="parecer"
+         data-inicio="../../index.html"
+         data-menu="Licença Capacitação"
+         data-parecer="Interrupção de Licença para Capacitação"
+         data-link-menu="../../menu/licencacapacitacao.html">
+
+         <header class="cabecalho">
+
+            <div class="logo">
+                <img src="../../img/logo_gov.png" width="400"  alt="Logo do governo e dados do órgão de emissão">
+             </div>
+
+             <nav id="breadcrumb" class="breadcrumb">
+
+                <a href="../../index.html">Início</a>
+
+                <span>></span>
+
+                <a href="../../menu/licencacapacitacao.html">Licença Capacitação</a>
+
+                <span>></span>
+
+                <span id="breadcrumb-atual">Interrupção de Licença para Capacitação</span>
+    
+            </nav>
+        </header>
+
+        <section class="tramitacao">
+            <div class="corpo-parecer">
+                <h1>PARECER DE INTERRUPÇÃO PARA LICENÇA CAPACITAÇÃO</h1>
+                <form action="" id="requerimento">
+
+                    <table class="tabela">    
+                         <caption class="sr-only">
+                                Dados de identificação e tramitação do processo
+                        </caption>              
+                            <thead>
+                                <tr>
+                                    <th colspan="2" class="titulo">Tramitação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Número do Processo:</th>
+                                        <td><input type="text" aria-label="Número do processo administrativo" placeholder="Digite o número do processo" width="100%">  </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Assunto do processo:</th>
+                                        <td>Interrupção de Licença para Capacitação</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Requerente:</th>
+       
+                                        <td><input type="text" placeholder="Digite o nome do servidor requerente" 
+                                           aria-label="Nome completo do servidor requerente" id="requerente"  width="100%"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Unidade responsável pela emissão do parecer:</th>
+                                    <td>CCAA/CGPCAP/DGP/PROPESSOAS/REITORIA/IFC</td>
+                                </tr>
+                                <tr>
+                                <th scope="row">Data de emissão do parecer:</th>
+                                <td><input  type="text" 
+                                   aria-label="Data de emissão do parecer" id="data-emissao" width="100%" align-self-center>  </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </section>
+
+        <section class="texto">
+            <div class="corpo-parecer">
+                <form>
+                        <p> 
+                            Trata-se de Interrupção da LICENÇA PARA CAPACITAÇÃO do(a) servidor(a) Requerente <span contenteditable="true"
+                        class="campo-inline" id="requerente2"></span>, ocupante do cargo <span contenteditable="true" class="campo-inline" id="cargo"></span>, 
+                         Matrícula SIAPE nº <input type="text" size="7" maxlength="7"> lotado no(a) 
+                          <select name="lotacao">
+                            <option>Campus Abelardo Luz</option>
+                            <option>Campus Araquari</option>
+                            <option>Campus Blumenau</option>
+                            <option>Campus Brusque</option>
+                            <option>Campus Camboriú</option>
+                            <option>Campus Concórdia</option>
+                            <option>Campus Fraiburgo</option>
+                            <option>Campus Ibirama</option>
+                            <option>Campus Luzerna</option>
+                            <option>Campus Rio do Sul</option>
+                            <option>Campus Santa Rosa do Sul</option>
+                            <option>Campus São Bento do Sul</option>
+                            <option>Campus São Francisco do Sul</option>
+                            <option>Campus Sombrio</option>
+                            <option>Campus Videira</option>
+                            <option>Reitoria Administrativa</option>
+                          </select>.
+                        </p>
+                        <p>
+                           A autorização para a Licença Capacitação no período de <input type="text" placeholder="dd/mm/aaaa" class="campo-data"> a <input type="text" placeholder="dd/mm/aaaa" class="campo-data"> (<span contenteditable="true" class="campo-inline"></span>) da servidora Requerente deu-se através da PORTARIA Nº <input type="text" size="9" maxlength="9">- PORT/REIT (11.01.18.56), de <input type="text" placeholder="dd/mm/aaaa" class="campo-data">.
+                        </p>
+
+                        <p>
+                           Conforme documentação anexada ao presente processo, o (a) servidor (a) interessado (a) apresentou formulário de interrupção de sua licença em decorrência de  <span contenteditable="true" 
+                         class="campo-grande"> </span>.
+                        </p>
+
+                        <p>
+                         A Licença para Capacitação está prevista no Art. 87 da Lei no 8.112/1990, in verbis:
+                        </p>
+                    <blockquote cite="Lei Nº 8.112/90, Art. 87">
+                        <strong>Art. 87.</strong> Após cada quinquênio de efetivo exercício, o servidor poderá, no interesse da 
+                    Administração, afastar-se do exercício do cargo efetivo, com a respectiva remuneração, por até três meses, 
+                    para participar de curso de capacitação profissional. (Redação dada pela Lei no 9.527, de 10.12.97).
+                    Parágrafo único. Os períodos de licença de que trata o caput não são acumuláveis.
+                    (Redação dada pela Lei no 9.527, de 10.12.97)
+                    </blockquote>
+
+                        <p>
+                               A Resolução nº 35/2025-CONSUPER, de 22/12/2025, a qual dispõe sobre Normas de afastamento para ações de capacitação e para licença capacitação dos servidores do IFC, estabelece:
+                        </p>
+
+                    <blockquote cite="Resolução CONSUPER nº 35/2025">
+                        <p> 
+                        <strong>Art. 60.</strong>  A Licença para Capacitação será concedida, entre outros critérios, quando a ação de desenvolvimento: 
+                        </p>
+                         Art. 67. Após cada quinquênio de efetivo exercício, o servidor poderá, no interesse da Administração, afastar-se do exercício do cargo efetivo, com a respectiva remuneração, por até três meses, para participar de curso de capacitação profissional.
+§ 1º A concessão estará condicionada ao planejamento interno do setor de lotação do servidor, à oportunidade do gozo da licença e à relevância do curso para o servidor e para o IFC, em observância à legislação e às normativas vigentes à época de análise da solicitação, e à classificação em edital.
+§ 2º Os períodos de que trata o caput não são acumuláveis.
+Art. 68. A Licença Capacitação será concedida, entre outros critérios, quando a ação de desenvolvimento:
+I. estiver prevista no Plano de Desenvolvimento de Pessoas do IFC;
+II. estiver alinhada ao desenvolvimento do servidor nas competências relativas:
+a. ao seu órgão de exercício ou de lotação;
+b. à sua carreira ou cargo efevo; e
+c. ao seu cargo em comissão ou à sua função de confiança.
+Art. 69. A licença para capacitação poderá ser parcelada conforme edital de classificação e de acordo com a legislação vigente.
+Art. 70. Os custos diretos ou indiretos com inscrição, deslocamento, hospedagem e realização da ação de desenvolvimento serão de exclusiva responsabilidade do servidor, salvo quando houver a previsão de disponibilidade orçamentária no Plano de Desenvolvimento de Pessoas (PDP) para esta finalidade, bem como presente o interesse da Administração e aprovação do dirigente máximo do órgão.
+Art. 71. A licença para capacitação somente será concedida quando a carga horária total da ação de desenvolvimento ou do conjunto de ações (presenciais e a distância) seja igual ou superior a 30 (trinta) horas semanais.
+Art. 72. A licença capacitação deverá ser concedida considerando-se o percentual máximo, permitido conforme legislação vigente, dos servidores efetivos em exercício no IFC simultaneamente. O eventual resultado fracionário será arredondado para o número imediatamente superior.
+Art. 73. Para a concessão da Licença Capacitação, a Administração deverá considerar:
+I. Se a licença do servidor inviabilizará o funcionamento do órgão ou da entidade; 
+II. Os períodos de menor demanda de força de trabalho.
+[...]
+ Art. 77. A concessão da licença para capacitação dar-se-á no interesse da Administração, podendo ser negada por necessidade de serviço ou inexistência de relação entre a capacitação proposta e as necessidades instucionais.
+Parágrafo único: Durante a licença capacitação é vedada a participação em atividades na instituição.
+[...]
+Art. 79. É vedada a contratação de substituto, na forma da Lei nº 8.745, de 9 de dezembro de 1993, para servidor em gozo de licença para capacitação.
+[...]
+Art. 82. Na Licença Capacitação por período superior a 30 (trinta) dias consecutivos, o servidor:
+I. Requererá, conforme o caso, a exoneração ou a dispensa do cargo em comissão ou função de confiança eventualmente ocupado, a contar da data de início do afastamento;
+II. Não fará jus às graficações e aos adicionais vinculados à avidade ou ao local de trabalho e que não façam parte da estrutura remuneratória básica do seu cargo efevo.
+Art. 83. Ao término da licença, o servidor deverá apresentar, no prazo máximo de 30 (trinta) dias, o (s) documento(s) comprobatório(s) de parcipação e conclusão na referida ação de desenvolvimento/capacitação à Coordenação de Gestão de Pessoas (no caso de servidores lotados no campus) ou à Diretoria de Gestão de Pessoas (no caso de servidores lotados na Reitoria).
+§ 1º A não apresentação da referida documentação culminará no desconto dos dias usufruídos para a Licença Capacitação, por meio de processo de reposição ao erário.
+[...]
+ Art. 87. O servidor que gozar da Licença Capacitação deverá permanecer por dois anos em exercício no respecvo cargo efetivo, a contar do término da licença capacitação, para afastar-se integralmente para parcipar de programa de pós-graduação stricto sensu, nos termos da legislação e das normativas vigentes à época da análise e concessão.
+Art. 88. A Licença Capacitação poderá ser interrompida a qualquer tempo, a pedido do servidor ou no interesse da Administração, condicionada essa interrupção à edição de ato da autoridade que concedeu o afastamento, permida a delegação para titular de cargo de natureza especial ou, quando se tratar de autarquia ou fundação pública federal, para o titular da unidade com competência sobre a área de gestão de pessoas, vedada a subdelegação.
+§ 1º A interrupção do afastamento, a pedido do servidor, motivada por caso fortuito ou força maior não implicará ressarcimento ao erário, desde que comprovada a efetiva parcipação ou o aproveitamento da ação de desenvolvimento no período transcorrido entre a data de início do afastamento até a data do pedido de interrupção.
+§ 2º As justificativas e a comprovação da participação ou do aproveitamento dos dias de licença na hipótese do § 1º serão avaliadas pelo dirigente máximo do órgão ou da entidade a que o servidor estiver vinculado, permitida a delegação para titular de cargo de natureza especial ou, quando se tratar de autarquia ou fundação pública federal, para o titular da unidade com competência sobre a área de gestão de pessoas, vedada a subdelegação.
+§ 3º O servidor que abandonar ou não concluir a ação de desenvolvimento ressarcirá o gasto com seu afastamento ao órgão ou à entidade, na forma da legislação vigente, ressalvado o disposto nos § 1º e § 2º. 
+ Art. 89. O servidor que abandonar ou não concluir a ação de desenvolvimento deverá ressarcir ao IFC o montante correspondente à remuneração percebida no período da licença, nos termos doa legislação vigente, sem prejuízo da apuração de eventual responsabilização penal, administrativa e civil.
+Art. 90. Suspendem a contagem do quinquênio, para efeito de concessão de Licença Capacitação, os afastamentos e as licenças que não sejam considerados de efetivo exercício.
+[...]
+Art. 94. O prazo para a análise e emissão de parecer final sobre o pedido de Licença Capacitação pela Diretoria de Gestão de Pessoas será de até 30 (trinta) dias, contados a parr da data de tramitação do processo à DGP/Reitoria/IFC.
+Parágrafo único. Considerando que os processos de Licença Capacitação devem tramitar somente em seu formato digital, o prazo de que trata este argo deverá considerar a data mais recente da(s) assinatura(s) digitais quando estas forem posteriores à data de tramitação do processo à DGP.
+(Grifo nosso)
+
+ 
+            Diante do exposto, observadas as garantias constitucionais e com fundamento na legislação vigente e na Resolução nº 06/2021-CONSUPER, de 10/03/2021 e, considerando a (____________________), esta Diretoria de Gestão de Pessoas manifesta-se favoravelmente pela Interrupção da Licença Capacitação a partir de (__________).
+         
+           Salienta-se que o(a) servidor(a) interessado(a) deverá apresentar a comprovação da participação da Licença Capacitação antes da interrupção emitida na Portaria.
+                         <p>
+                             O não atendimento às orientações deste parecer implicará na abertura de processo de reposição ao erário, 
+                            referente aos dias em que não restar comprovado que foram utilizados para a realização da ação ou do curso de 
+                            capacitação.
+                         </p>
+                         <p>
+                              Outrossim, informamos que o(a) servidor(a) deverá participar da ação de capacitação por ele(a) proposto(a), 
+                              sendo vedada a mudança, exceto por justificativa devidamente fundamentada e concordância da Chefia Imediata e 
+                             Direção-Geral do Campus. 
+                         </p>
+                         <p>
+                            É o entendimento.
+                         </p>
+                         <p>
+
+                                  À apreciação da Diretoria de Gestão de Pessoas e Pró-Reitoria de Desenvolvimento, Inclusão, Diversidade e Assistência à Pessoa, para ciência e assinaturas.
+
+                        </p>
+
+                        <button class="button-pdf"  onclick= "gerarPDF()">
+                         Gerar PDF
+                        </button>
+                </form>
+            </div>
+        </section>
+      
+
+        <footer class="rodape">
+
+          <img src="../../img/logo_ifc.png" class="logoifc"  alt="Logo IFC">
+
+          <div class="endereco">  
+
+           <img src="../../img/end_rodape.png"  alt="Endereço da Reitoria IFC">
+
+       </footer>
+
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../../js/menu.js" defer></script>
+    <script src="../../js/pareceres.js" defer></script>
+ </body>
+</html>

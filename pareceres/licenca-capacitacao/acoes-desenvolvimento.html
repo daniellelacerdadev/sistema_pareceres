@@ -92,10 +92,10 @@
                 <form>
                         <p> 
                             Trata-se de solicitação de LICENÇA PARA CAPACITAÇÃO do(a) servidor(a) Requerente <span contenteditable="true"
-                        class="campo-inline" id="requerente2"></span>, ocupante do cargo <span contenteditable="true" class="campo-inline" id="cargo"></span>, 
+                        class="campo-inline" id="requerente2" role="textbox" aria-label="Nome do servidor requerente"></span>, ocupante do cargo <span contenteditable="true" class="campo-inline" id="cargo" role="textbox" aria-label="Cargo efetivo do servidor"></span>, 
                          o (a) qual requer a utilização da referida licença para a realização das seguintes atividades: <span contenteditable="true" 
-                         class="campo-grande"> </span> com carga horária total de <input type="text" size="5" id="cargatotal" oninput="calcularCargaHoraria()"> horas,
-                          para o período de <input type="number" class="input-numero" id="dias" oninput="calcularCargaHoraria()"> dias.
+                         class="campo-grande" role="textbox" aria-label="Descrição das ações de desenvolvimento"> </span> com carga horária total de <input type="text" size="5" aria-label="Carga horária total das ações de desenvolvimento, em horas" id="cargatotal" oninput="calcularCargaHoraria()"> horas,
+                          para o período de <input type="number" class="input-numero" aria-label="Quantidade de dias de licença solicitados" id="dias" oninput="calcularCargaHoraria()"> dias.
                         </p>
                         <p>
                          A Licença para Capacitação está prevista no Art. 87 da Lei no 8.112/1990, in verbis:
@@ -234,9 +234,9 @@
 
                         <p>
                             Ao verificarmos o plano de curso encaminhado pelo servidor para o período proposto, vemos que a carga horária total 
-                         de <span id="cargatotal2" class="campo-inline"></span> horas dividida por <span id="dias2" class="campo-inline"></span> dias de licença e multiplicada por 07 dias 
+                         de <span id="cargatotal2" aria-label="Carga horária total das ações de desenvolvimento, em horas" class="campo-inline"></span> horas dividida por <span id="dias2" aria-label="Quantidade de dias de licença solicitados" class="campo-inline"></span> dias de licença e multiplicada por 07 dias 
                          semanais ( <span id="cargatotal3" class="campo-inline"></span> ÷ <span id="dias3" class="campo-inline"></span> × 7), culminou no seguinte resultado: 
-                         <input type="text" id="cargasem" oninput="calcularCargaHoraria()">horas semanais, atendendo ao disposto na <strong>
+                         <input type="text" id="cargasem" aria-label="Carga horária semanal calculada, em horas" oninput="calcularCargaHoraria()">horas semanais, atendendo ao disposto na <strong>
                             Nota Técnica SEI nº 7737/2020/ME e no art. 26 do Decreto nº 9.991/2019, quanto à carga horária mínima prevista para as ações de capacitação.</strong>
                         </p>
                         <p>
@@ -338,10 +338,10 @@
                              Neste sentido, considerando a concordância da Chefia Imediata e da Direção-Geral do Campus (ou Pró-Reitoria) 
                          com a proposta de licença capacitação apresentada pelo(a) servidor(a) interessado(a), esta Diretoria de Gestão de 
                         Pessoas é favorável à concessão da Licença para Capacitação ao (à) servidor (a) <span contenteditable="true" 
-                        class="campo-inline" id="requerente3"></span>, 
-                        ocupante do cargo de <span contenteditable="true" class="campo-inline" id="cargo2"></span>, Matrícula SIAPE nº 
-                          <input type="text" size="7" maxlength="7"> lotado no(a) 
-                          <select name="lotacao">
+                        class="campo-inline" id="requerente3" role="textbox" aria-label="Nome do servidor beneficiário da licença"></span>, 
+                        ocupante do cargo de <span contenteditable="true" class="campo-inline" role="textbox" id="cargo2" aria-label="Cargo efetivo do servidor beneficiário"></span>, Matrícula SIAPE nº 
+                          <input type="text" size="7" maxlength="7" aria-label="Matrícula SIAPE do servidor"> lotado no(a) 
+                          <select name="lotacao" aria-label="Unidade de lotação do servidor">
                             <option>Campus Abelardo Luz</option>
                             <option>Campus Araquari</option>
                             <option>Campus Blumenau</option>
@@ -359,16 +359,16 @@
                             <option>Campus Videira</option>
                             <option>Reitoria Administrativa</option>
                           </select> para ação de desenvolvimento presencial ou à distância, no(a) <span contenteditable="true" 
-                             class="campo-inline" placeholder="Instituição Promotora"> </span> 
+                             class="campo-inline" placeholder="Instituição Promotora" role="textbox" aria-label="Nome da instituição promotora da capacitação"> </span> 
                               com fundamento no art. 87 da Lei nº 8.112, de 11 de dezembro de 1990, com a redação dada pela 
                               Lei nº 9.527, de 10 de dezembro de 1997, e na Nota técnica  SEI nº 43661/2022/ME, combinados com o art. 25 da 
                               Lei nº 9.527, de 10 de dezembro de 1997, com nova redação dada pelo Decreto nº 10.506, de 2 de outubro de 2020, 
-                              referente ao quinquênio compreendido entre  <input type="text"  value="--/--/----"> a 
-                             <input type="text"  value="--/--/----">, pelo prazo <input type="number" class="input-numero" id="dias4"> dias,  
-                             de <input type="text" value="--/--/----"> a <input type="text" value="--/--/----">. 
+                              referente ao quinquênio compreendido entre  <input type="text"  value="--/--/----" aria-label="Data inicial do quinquênio aquisitivo"> a 
+                             <input type="text"  value="--/--/----" aria-label="Data final do quinquênio aquisitivo">, pelo prazo <input type="number" class="input-numero" id="dias4" aria-label="Quantidade de dias de licença solicitados"> dias,  
+                             de <input type="text" value="--/--/----" aria-label="Data inicial do período de licença"> a <input type="text" value="--/--/----" aria-label="Data final do período de licença">. 
                             A licença Capacitação foi concedida para ação de desenvolvimento presencial ou à distância, conforme art. 25, I, 
                             do Decreto 9.991/2019; código 
-                            <select name="código">
+                            <select name="código" aria-label="Código da ocorrência de licença para capacitação">
                                 <option>421</option>
                                 <option>396</option>
                             </select>
