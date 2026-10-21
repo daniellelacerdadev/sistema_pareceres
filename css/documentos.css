@@ -177,6 +177,16 @@ select {
   white-space: pre-wrap;
 }
 
+.campo-especial {
+  display: inline-block;
+  border: 1px solid transparent;
+  color: var(--preto-principal);
+  padding: 2px 4px;
+  outline: none;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
 #short .campo-grande {
   display: inline;
   min-width: 120px;
